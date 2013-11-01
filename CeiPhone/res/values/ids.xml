@@ -336,6 +336,9 @@
     <item type="id" name="read_report_fl">false</item>
     <item type="id" name="read_report_mf">false</item>
     <item type="id" name="read_report_find">false</item>
+    <item type="id" name="read_report_tzgg">false</item>
+    <item type="id" name="read_report_grzx">false</item>
+    <item type="id" name="read_report_gywm">false</item>
     <item type="id" name="read_report_ettext">false</item>
     <item type="id" name="read_report_findreport">false</item>
     <item type="id" name="read_report_fltable">false</item>

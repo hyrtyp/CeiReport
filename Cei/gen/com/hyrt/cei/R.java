@@ -1612,7 +1612,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.hyrt.cei:label
+          @attr name android:label
         */
         public static final int BookStore_label = 1;
         /**
@@ -1626,7 +1626,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.hyrt.cei:name
+          @attr name android:name
         */
         public static final int BookStore_name = 0;
         /**
@@ -1640,7 +1640,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.hyrt.cei:storeClass
+          @attr name android:storeClass
         */
         public static final int BookStore_storeClass = 2;
         /** Attributes that can be used with a ReportView.
@@ -1663,7 +1663,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.hyrt.cei:reportBackground
+          @attr name android:reportBackground
         */
         public static final int ReportView_reportBackground = 0;
         /** Attributes that can be used with a ShelvesView.
@@ -1686,7 +1686,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.hyrt.cei:shelfBackground
+          @attr name android:shelfBackground
         */
         public static final int ShelvesView_shelfBackground = 0;
     };

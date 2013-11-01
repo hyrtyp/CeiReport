@@ -742,6 +742,8 @@ public final class R {
         public static final int read_report_fltable=0x7f0a0152;
         public static final int read_report_fltable1=0x7f0a0154;
         public static final int read_report_fltable_tv=0x7f0a0158;
+        public static final int read_report_grzx=0x7f0a01c2;
+        public static final int read_report_gywm=0x7f0a01c3;
         public static final int read_report_jp=0x7f0a014b;
         public static final int read_report_main_ga=0x7f0a00aa;
         public static final int read_report_main_gv=0x7f0a017b;
@@ -758,6 +760,7 @@ public final class R {
         public static final int read_report_right=0x7f0a015d;
         public static final int read_report_title=0x7f0a00ab;
         public static final int read_report_topicon=0x7f0a014a;
+        public static final int read_report_tzgg=0x7f0a01c1;
         public static final int regist_1=0x7f0a01a7;
         public static final int regist_2=0x7f0a01a8;
         public static final int regist_3=0x7f0a01a9;
@@ -990,6 +993,7 @@ public final class R {
         public static final int read_report_bookself_popu=0x7f03004d;
         public static final int read_report_bookself_popu_delect=0x7f03004e;
         public static final int read_report_bookshelf=0x7f03004f;
+        public static final int read_report_bottom_menu=0x7f030068;
         public static final int read_report_browser=0x7f030050;
         public static final int read_report_browseritem=0x7f030051;
         public static final int read_report_find=0x7f030052;
@@ -1057,6 +1061,7 @@ public final class R {
         public static final int yangshi_4=0x7f090003;
         public static final int yangshi_5=0x7f090004;
         public static final int yangshi_pad_title=0x7f090005;
+        public static final int yangshi_phone_bottom_menu=0x7f090009;
         public static final int yangshi_phone_title_big=0x7f090006;
         public static final int yangshi_phone_title_small=0x7f090007;
     }

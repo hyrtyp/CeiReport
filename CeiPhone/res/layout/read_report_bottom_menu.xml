@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/read_report_bottombg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5.0" >
+
+        <RelativeLayout
+            android:id="@id/read_report_jp"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_jp1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_ph"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_ph1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_fl"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_fl1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_mf"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_mf1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_find"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_find1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_tzgg"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_find1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_grzx"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_find1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/read_report_gywm"
+            style="@style/yangshi_phone_bottom_menu" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/read_report_find1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>
