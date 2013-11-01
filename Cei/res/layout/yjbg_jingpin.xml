@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:background="@drawable/background" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" layout="@layout/yjbg_title_top" />
+    <RelativeLayout android:id="@id/botton" android:background="@drawable/phone_study_bottom" android:paddingLeft="100.0dip" android:paddingRight="100.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="7.0" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_page_home" android:background="@drawable/econ_data_home1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_home" android:background="@drawable/yjbg_but_home1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_goods" android:background="@drawable/yjbg_but_jp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_sort" android:background="@drawable/yjbg_but_yd1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_partition" android:background="@drawable/yjbg_but_fl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_miamfei" android:background="@drawable/yjbg_but_mf1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_good_report_find" android:background="@drawable/yjbg_but_ss1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/yjbg_goodreport_list" android:background="@drawable/phone_studynm_bg" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_above="@id/botton" android:layout_below="@id/top" />
+    <LinearLayout android:gravity="center" android:id="@id/report_jingp_pro" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContentOverlay" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/full_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="yangshi_1">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ff054b93</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">7</item>
+    </style>
+    <style name="yangshi_2">
+        <item name="android:textSize">18.0px</item>
+        <item name="android:textColor">#ff3d3d3f</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <style name="yangshi_3">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">4</item>
+    </style>
+    <style name="yangshi_4">
+        <item name="android:textSize">24.0px</item>
+    </style>
+    <style name="yangshi_5">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">8</item>
+    </style>
+    <style name="yangshi_pad_title">
+        <item name="android:textSize">30.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="yangshi_phone_title_big">
+        <item name="android:textSize">30.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="yangshi_phone_title_small">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="AppTheme" parent="@*android:style/Theme.Light" />
+</resources>

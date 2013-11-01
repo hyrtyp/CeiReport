@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/phone_study_labelParent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/phone_study_menuselect" android:gravity="center" android:background="@drawable/phone_study_label_select" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="全部自选课" style="@style/yangshi_4" />
+    <Button android:textColor="@color/phone_study_menunormal" android:gravity="center" android:background="@drawable/phone_study_labelnormal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:text="下载自选课" style="@style/yangshi_4" />
+</LinearLayout>

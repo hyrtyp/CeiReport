@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#ff333333</color>
+    <color name="dialog_title_blue">#ff9cccf7</color>
+    <color name="phone_study_listviewselect">#ff5489bf</color>
+    <color name="phone_study_listviewnormal">#00000000</color>
+    <color name="phone_study_menuselect">#ff0000ff</color>
+    <color name="phone_study_menunormal">#ffffffff</color>
+    <color name="econ_data_content_normal">#ff0d2a78</color>
+    <color name="econ_data_content_select">#ffffffff</color>
+    <color name="weibosdk_transparent">#00000000</color>
+    <color name="weibosdk_text_num_gray">#ff333333</color>
+    <color name="weibosdk_dialog_title_blue">#ff9cccf7</color>
+</resources>

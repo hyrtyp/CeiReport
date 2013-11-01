@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/top" android:background="@drawable/phone_study_topbg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/phone_study_basetitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动学习" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+    <TextView android:id="@id/phone_study_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/yangshi_phone_title_big" />
+    <ImageView android:id="@id/phone_study_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zjzx_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

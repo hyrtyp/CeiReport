@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/full_view" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_study_top" android:background="@drawable/phone_study_top_bg" android:layout_width="fill_parent" android:layout_height="47.0px">
+        <ImageView android:gravity="center" android:id="@id/back_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back_btn" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="免费学习" android:layout_toRightOf="@id/back_btn" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+        <ImageView android:id="@id/phone_study_downmanager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/phone_study_downmanager" android:layout_toLeftOf="@id/phone_study_search_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/phone_study_search_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/phone_study_search" android:layout_toLeftOf="@id/phone_study_refresh" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/phone_study_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:src="@drawable/phone_study_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/phone_study_progressLl" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/phone_studynm_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+        <ListView android:id="@id/phone_study_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" />
+    </LinearLayout>
+    <include layout="@layout/phone_study_bottom_bar" />
+</LinearLayout>

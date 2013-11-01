@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/phone_study_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/phone_study_listview_selector" android:cacheColorHint="#00000000" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

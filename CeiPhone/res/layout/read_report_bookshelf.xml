@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainlayout" android:background="@drawable/read_report_bookself_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/phone_study_topbg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/ib_findbg_back" android:background="@drawable/read_report_main_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/read_report_mybookself" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/read_report_bookself_sz" android:background="@drawable/read_report_bookself_sz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mid" android:background="@drawable/read_report_findbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <LinearLayout android:id="@id/read_report_bookself_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/read_report_bookself_shu" android:background="@drawable/read_report_bookself_shu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <ImageView android:id="@id/read_report_bookself_heng" android:background="@drawable/read_report_bookself_heng" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/read_report_bookself_find" android:background="@drawable/read_report_book_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/read_report_bookself_right" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/read_report_bookself_find" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <EditText android:gravity="center_vertical" android:id="@id/read_report_bookself_et" android:background="@drawable/read_report_find_eidtext" android:paddingLeft="12.0dip" android:layout_width="160.0dip" android:layout_height="25.0dip" android:hint="搜索" android:singleLine="true" android:drawableLeft="@drawable/read_report_search" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mid">
+        <com.hyrt.readreport.view.ShelvesView android:gravity="center" android:id="@id/grid_shelves" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:numColumns="3" />
+        <ListView android:id="@id/yjbg_book_shelves" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/yjbg_bookself_pro" android:background="#90000000" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

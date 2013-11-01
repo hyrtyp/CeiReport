@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ib_findbg_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="研究报告" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+        <ImageView android:id="@id/ib_findbg_bookshelf" android:background="@drawable/read_report_bookshelf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/read_report_topicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="研究报告" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_big" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/botton" android:background="@drawable/read_report_bottombg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/read_report_jp" android:background="@drawable/read_report_jp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/read_report_ph" android:background="@drawable/read_report_ph1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/read_report_fl" android:background="@drawable/read_report_fl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/read_report_mf" android:background="@drawable/read_report_mf1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/read_report_find" android:background="@drawable/read_report_find1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/find_line" android:background="@drawable/read_report_findbg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <EditText android:id="@id/read_report_ettext" android:background="@drawable/read_report_find_eidtext" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:id="@id/read_report_findreport" android:background="@drawable/read_report_find_findimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/read_report_fltable" android:background="@drawable/menu_scrollviewbg" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/find_line">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.hyrt.readreport.view.GGridView android:id="@id/read_report_fl_gv" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:listSelector="@drawable/nodrawable" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView android:id="@id/read_report_fltable1" android:background="@drawable/menu_scrollviewbg" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/read_report_fltable">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.hyrt.readreport.view.GGridView android:id="@id/read_report_fl_gv2" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:listSelector="@drawable/nodrawable" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/read_report_more" android:background="#19000000" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="更多..." android:layout_above="@id/botton" />
+    <ListView android:id="@id/read_report_data_lv" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_above="@id/read_report_more" android:layout_below="@id/read_report_fltable1" />
+</RelativeLayout>

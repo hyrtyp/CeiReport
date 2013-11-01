@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_data_good_tops" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/econ_good_tops_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/econ_data_imgjj" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/econ_good_tops_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/econ_data_jcdata" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ImageView android:textSize="10.0dip" android:id="@id/econ_good_tops_tv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/econ_data_img_sousuo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/econ_good_bottoms" android:background="@drawable/phone_study_bottombg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_good_bottons_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_kx" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_good_bottons_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zs" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_good_bottons_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_fx1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_good_bottons_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zb" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/econ_good_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_above="@id/econ_good_bottoms" android:layout_below="@id/econ_data_good_tops" />
+</RelativeLayout>

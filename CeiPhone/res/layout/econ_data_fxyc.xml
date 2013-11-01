@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_main_fxyc_top" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:id="@id/econ_fxyc_top_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="经济数据" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+        <TextView android:id="@id/econ_main_top_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_big" />
+        <ImageView android:id="@id/econ_main_top_tv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/econ_data_img_sousuo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/econ_fxyc_bottom" android:background="@drawable/phone_study_bottombg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_fxyc_botton_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_kx" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_fxyc_botton_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zs" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_fxyc_botton_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_fx1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_fxyc_botton_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zb" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/econ_fxyc_daohang" android:background="@drawable/menu_scrollviewbg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/econ_main_fxyc_top">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.hyrt.cei.ui.information.view.GGridView android:id="@id/zjzx_info_gridview" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:listSelector="@drawable/nodrawable" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ListView android:id="@id/econ_fxyc_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_above="@id/econ_fxyc_bottom" android:layout_below="@id/econ_fxyc_daohang" />
+</RelativeLayout>

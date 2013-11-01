@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/read_report_book_self_pop_bg" android:layout_width="210.0dip" android:layout_height="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ff003366" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="更换背景" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/report_item_bg1" android:background="@drawable/read_report_book_sky1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/report_item_bg2" android:background="@drawable/read_report_book_sky1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+            <ImageView android:id="@id/report_item_bg3" android:background="@drawable/read_report_book_sky1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/read_report_book_self_pop_bg_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ff003366" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="修改图书排序" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/report_item_sort2" android:background="@drawable/read_report_book_sort_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ImageView android:id="@id/report_item_sort1" android:background="@drawable/read_report_book_sort_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/read_report_book_self_pop_bg_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

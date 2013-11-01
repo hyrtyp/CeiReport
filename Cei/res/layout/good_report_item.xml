@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_goodbg_hand" android:background="@drawable/report1" android:layout_width="100.0dip" android:layout_height="130.0dip" android:layout_alignParentLeft="true" />
+    <LinearLayout android:id="@id/ll_goodbg_bot" android:layout_width="wrap_content" android:layout_height="135.0dip" android:layout_alignParentRight="true">
+        <ImageButton android:layout_gravity="center" android:id="@id/ib_bg_download" android:background="@drawable/bg_bookdownload_but" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="50.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginLeft="13.0dip" android:layout_toLeftOf="@id/ll_goodbg_bot" android:layout_toRightOf="@id/iv_goodbg_hand">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/tv_goodbg_title" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bglitt" />
+                <TextView android:textColor="#ff000000" android:id="@id/tv_goodbg__aname_bq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  作者：" />
+                <TextView android:textColor="#ff000000" android:id="@id/tv_goodbg__aname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="me" />
+            </LinearLayout>
+            <LinearLayout android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bglitt" />
+                <TextView android:textColor="#ff000000" android:id="@id/tv_goodbg_price_bq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  价格：" />
+                <TextView android:textColor="#ffff0000" android:id="@id/tv_goodbg_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50￥" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ff000000" android:id="@id/tv_goodbg_text" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="body" android:lines="2" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

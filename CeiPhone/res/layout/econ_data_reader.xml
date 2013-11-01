@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_data_reae_top" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/econ_reaed_top_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/econ_data_imgjj" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/econ_read_top_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/econ_data_reading" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ImageView android:textSize="10.0dip" android:id="@id/econ_main_top_tv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/econ_data_img_sousuo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/econ_read_lin_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/econ_data_reae_top">
+        <WebView android:id="@id/econ_read_web_content" android:background="#ff3f0987" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

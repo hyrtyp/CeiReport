@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/phone_study_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/phone_study_top" android:background="@drawable/phone_study_top_bg" android:layout_width="fill_parent" android:layout_height="47.0px">
+        <ImageView android:gravity="center" android:id="@id/back_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back_btn" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="移动学习" android:layout_toRightOf="@id/back_btn" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+        <ImageView android:id="@id/phone_study_downmanager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/phone_study_downmanager" android:layout_toLeftOf="@id/phone_study_search_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/phone_study_search_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/phone_study_search" android:layout_toLeftOf="@id/phone_study_refresh" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/phone_study_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:src="@drawable/phone_study_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/phone_study_progressLl" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView android:id="@id/phone_study_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="6.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hyrt.cei.ui.phonestudy.view.FlowRelativeyout android:id="@id/phone_study_top_ivparent" android:background="#99ffffff" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/phone_study_leftoperation" android:paddingLeft="5.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/phone_study_leftopertion_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_rightoperation" android:paddingRight="5.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/phone_study_rightopertion_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_top_1" android:layout_width="292.0dip" android:layout_height="129.0dip" android:layout_marginLeft="50.0dip" android:src="@drawable/courseware_big_default_icon" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_top_2" android:layout_width="354.0dip" android:layout_height="157.0dip" android:layout_marginLeft="170.0dip" android:src="@drawable/courseware_big_default_icon" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_top_5" android:layout_width="292.0dip" android:layout_height="129.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/courseware_big_default_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_top_4" android:layout_width="354.0dip" android:layout_height="157.0dip" android:layout_marginRight="-176.0dip" android:src="@drawable/courseware_big_default_icon" android:layout_toLeftOf="@id/phone_study_top_5" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/phone_study_top_3" android:layout_width="380.0dip" android:layout_height="169.0dip" android:layout_marginLeft="275.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/courseware_big_default_icon" android:layout_centerInParent="true" />
+            </com.hyrt.cei.ui.phonestudy.view.FlowRelativeyout>
+            <LinearLayout android:gravity="center" android:id="@id/phone_study_indexParent" android:background="#99ffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_index_selector" />
+            </LinearLayout>
+            <com.hyrt.cei.ui.phonestudy.view.MyGridView android:id="@id/phone_study_gridview" android:paddingLeft="40.0dip" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="#00000000" android:verticalSpacing="20.0dip" android:numColumns="5" />
+            <Button android:textSize="12.0sp" android:gravity="center" android:id="@id/phone_study_morebtn" android:background="#50ffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="更多..." />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/phone_study_bottom_transparentbar" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/top" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/home" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="关于我们" android:layout_toRightOf="@id/home" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_above="@id/pc_re" android:layout_below="@id/top">
+        <ImageView android:id="@id/abouts_us" android:background="@drawable/about_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/usesinfo" android:background="@drawable/useinfo_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_toRightOf="@id/abouts_us" />
+        <ImageView android:id="@id/mazminfo" android:background="@drawable/mzsm_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_toRightOf="@id/usesinfo" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/botton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/home_ceinet" android:background="@drawable/homepage_botton_button_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/home_witsea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_2" android:layout_toLeftOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_main_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_num" android:layout_toLeftOf="@id/home_witsea" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_announcement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_1" android:layout_toLeftOf="@id/home_main_num" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_left" android:layout_toLeftOf="@id/home_announcement" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_personcenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_4" android:layout_toRightOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_5" android:layout_toRightOf="@id/home_personcenter" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_right" android:layout_toRightOf="@id/home_disclaimer" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/mids_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_above="@id/botton">
+        <RelativeLayout android:id="@id/pc_re" android:background="@drawable/mzsm_mid_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/personcenten_re">
+            <WebView android:id="@id/disclaimer_web" android:background="@drawable/mzsm_img" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

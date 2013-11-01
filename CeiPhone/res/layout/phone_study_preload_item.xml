@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phone_study_preload_item_titleRl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hyrt.cei.ui.phonestudy.view.AlwaysMarqueeTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="28.0px" android:textColor="#ff054b93" android:ellipsize="marquee" android:id="@id/phone_study_preload_item_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="300.0px" android:layout_height="wrap_content" android:text="主题 ：美国决定对中国输美荧光增白剂征收高额反倾销关税" android:scrollHorizontally="true" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/yangshi_1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/phone_study_preload_item_processStatus" android:background="@drawable/phone_study_preload_item_load_num_bg" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/phone_study_preload_item_lblPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/phone_study_preload_item_process" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/phone_study_preload_item_titleRl">
+        <ProgressBar android:id="@id/phone_study_preload_item_progressBarDown" android:layout_width="fill_parent" android:layout_height="15.0dip" android:maxHeight="8.0dip" android:max="100" android:progressDrawable="@drawable/phone_study_preload_item_progress_style_play" android:minHeight="5.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/phone_study_preload_item_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/phone_study_preload_item_process">
+        <TextView android:id="@id/phone_study_preload_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="主讲人：范先生/张先生            发布时间:2012-12-31 15:23:50" android:layout_centerVertical="true" style="@style/yangshi_2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:id="@id/phone_study_preload_item_addcourse" android:background="@drawable/phone_study_preload_item_addcourse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <Button android:id="@id/phone_study_preload_item_btnPlay" android:tag="播放" android:background="@drawable/phone_study_preload_item_play_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <Button android:id="@id/phone_study_preload_item_btnControl" android:tag="开始" android:background="@drawable/phone_study_preload_item_start_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <Button android:id="@id/phone_study_preload_item_btnDelete" android:background="@drawable/phone_study_preload_item_delete_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginTop="5.0dip" android:src="@drawable/phone_study_dotted_line" android:layout_below="@id/phone_study_preload_item_control" />
+</RelativeLayout>

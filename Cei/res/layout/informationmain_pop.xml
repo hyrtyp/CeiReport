@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/info_main_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="400.0dip" android:layout_marginBottom="190.0dip" android:baselineAlignBottom="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <GridView android:id="@id/info_main_gridview" android:layout_width="400.0dip" android:layout_height="120.0dip" android:numColumns="4" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

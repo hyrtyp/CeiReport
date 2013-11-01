@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/phone_studynm_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" layout="@layout/yjbg_title_top" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <EditText android:id="@id/yjbg_report_find_et" android:background="@drawable/yjbg_book_find_bg" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="260.0dip" android:singleLine="true" android:drawableLeft="@drawable/yjbg_book_find_bg_small" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/yjbg_report_find_iv" android:background="@drawable/yjbg_book_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/report_find_pro" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_findbg" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

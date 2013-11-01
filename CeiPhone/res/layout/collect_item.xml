@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_icon" android:layout_width="217.0px" android:layout_height="152.0px" android:src="@drawable/witsea_default_icon" />
+    <RelativeLayout android:layout_width="217.0px" android:layout_height="fill_parent">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/toolbox_item_textview_name" android:paddingTop="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="政经学院" android:singleLine="true" />
+        <ImageView android:id="@id/download_icon" android:padding="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:src="@drawable/wit_sea_item_install" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

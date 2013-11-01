@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/welcome_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/homepage_dzb_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mainpage_top_part" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/botton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/home_ceinet" android:background="@drawable/homepage_botton_button_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/home_witsea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_2" android:layout_toLeftOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_main_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_num" android:layout_toLeftOf="@id/home_witsea" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_announcement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_1" android:layout_toLeftOf="@id/home_main_num" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_left" android:layout_toLeftOf="@id/home_announcement" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_personcenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_4" android:layout_toRightOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/home_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_5" android:layout_toRightOf="@id/home_personcenter" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_right" android:layout_toRightOf="@id/home_disclaimer" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/imageView3" android:background="@drawable/login_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+                <Button android:id="@id/back_back" android:background="@drawable/back_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/imageView4" android:background="@drawable/login_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView3" android:layout_alignParentTop="true" />
+        <ScrollView android:orientation="vertical" android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/imageView99" android:layout_below="@id/imageView4" android:layout_alignLeft="@id/imageView4">
+            <LinearLayout android:orientation="vertical" android:id="@id/ui_regist_etparent" android:background="@drawable/login_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview111" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="用户名 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview111" />
+                    <ImageView android:background="@drawable/grzx_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview222" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="密码 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/textview222" />
+                    <ImageView android:background="@drawable/grzx_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview333" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="密码确认 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/textview333" />
+                    <ImageView android:background="@drawable/grzx_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview444" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="昵称 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview444" />
+                    <ImageView android:background="@drawable/grzx_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview555" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="电子邮箱 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview555" />
+                    <ImageView android:background="@drawable/grzx_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview666" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="性别 :" android:layout_centerVertical="true" />
+                    <RadioGroup android:orientation="horizontal" android:id="@id/lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checkedButton="@id/wlan" android:layout_toRightOf="@id/textview666" android:layout_centerVertical="true">
+                        <RadioButton android:textColor="#ff000000" android:id="@id/economic_register_register_query_accurate_query_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="true" android:text="男" />
+                        <RadioButton android:textColor="#ff000000" android:id="@id/economic_register_register_qussssery_vague_query_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="女" />
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview777" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="证件类型 :" />
+                    <EditText android:id="@id/regist_6" android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview777" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview888" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="证件号码 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview888" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/textview999" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="电话 :" />
+                    <EditText android:background="@drawable/ui_login_etborder" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/textview999" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/ui_regist_login" android:background="@drawable/ui_regist_regist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:id="@id/imageView99" android:background="@drawable/login_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/imageView5" android:layout_alignBottom="@id/imageView3" />
+        <ImageView android:id="@id/imageView6" android:background="@drawable/login_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView5" android:layout_below="@id/imageView4" />
+        <ImageView android:id="@id/ui_regist_regist" android:background="@drawable/login_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView5" android:layout_below="@id/imageView6" />
+    </RelativeLayout>
+</RelativeLayout>

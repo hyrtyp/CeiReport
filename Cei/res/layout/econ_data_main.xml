@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/econ_data_main_all" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_data_main_top" android:background="@drawable/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/econ_data_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="经济数据" android:layout_toRightOf="@id/econ_data_back" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+        <ImageView android:gravity="center" android:id="@id/econ_data_shuax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:src="@drawable/econ_data_shuax" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/econ_part_bottom" android:background="@drawable/econ_data_bottom_bg" android:paddingLeft="100.0dip" android:paddingRight="100.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="7.0" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_home" android:background="@drawable/econ_data_home1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_zx" android:background="@drawable/econ_data_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_sz" android:background="@drawable/econ_data_kx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_zz" android:background="@drawable/econ_data_zs1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_fx" android:background="@drawable/econ_data_fx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_zb" android:background="@drawable/econ_data_zb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/econ_data_sj" android:background="@drawable/econ_data_cx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_above="@id/econ_part_bottom" android:layout_below="@id/econ_data_main_top">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/econ_data_bg0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:paddingLeft="40.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:id="@id/aa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/econ_data_img_point0" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point1" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point2" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point3" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point4" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/aa" android:layout_centerInParent="true">
+                    <Gallery android:id="@id/econ_data_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="10.0dip" />
+                    <TextView android:textSize="20.0dip" android:textColor="@color/black" android:id="@id/good_report_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignBottom="@id/econ_data_top" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <GridView android:id="@id/econ_data_news" android:background="@drawable/econ_data_gri_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:columnWidth="50.0dip" android:numColumns="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/econ_data_bg1" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="2.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/econ_data_zhib" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0px" android:textColor="#ff3c3c3c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="经济指标速查：" />
+                <TextView android:textSize="14.0px" android:textColor="#ff0e2b76" android:ellipsize="marquee" android:id="@id/econ_data_zhib_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="经济指标速查：" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/econ_data_zhib_img" android:background="@drawable/econ_data_small_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0px" android:textColor="#ff3c3c3c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="经济数据查询：" />
+                <TextView android:textSize="14.0px" android:textColor="#ff0e2b76" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/econ_data_data_img" android:background="@drawable/econ_data_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/econ_data_pro" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="14" android:versionName="14.0" package="com.hyrt.cei"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="中经智库" android:icon="@drawable/icon_main" android:name=".application.CeiApplication" android:hardwareAccelerated="true">
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.main.Welcome" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="下载" android:name="com.hyrt.report.downloader.MainActivity" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InfoSearchActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationMainActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.view.util.DownLoadReport" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.ReportIntro" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.dzb.ui.HomePageDZB" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.personcenter.QccountInfo" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.personcenter.PersonInfo" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.personcenter.PersonCenter" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.common.GetpasswordActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.UpdateOperate" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDataQueryActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDataMain" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconGoodDataActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconZBInf" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconZZDataActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.econdata.EconDateNumberActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.OpenBookActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.MianfeiReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.FindReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.PartitionReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.SortReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.main.MyThinkTank" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.main.Disclaimer" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.information.Information" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.SearchCourseActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.PlayRecordCourseActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.SayGroupActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.witsea.WitSeaActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.integratedinformation.IntegratedInformationActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.personcenter.ChangePassword" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.common.LoginActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.WebViewUtil" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.RegistActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconFXDataActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconZBQueryActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDateActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.CeiShelfBookActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.ReadReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.ebook.GoodsReportActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.main.Announcement" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.main.CeiNet" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.HomePageActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.CourseDetailActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.NominateActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.PreloadActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.KindsActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.SelfSelectCourseActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.SayGroupListActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.FreeActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.poqop.document.BookQianActivity" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="org.vudroid.pdfdroid.PdfViewerActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/pdf" android:path="aaa" />
+            </intent-filter>
+        </activity>
+        <activity android:label="PDF阅读器" android:name="com.poqop.document.MainBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".ui.phonestudy.SinaDemoActivity" android:screenOrientation="landscape" />
+        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.APITypeListActivity" />
+        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.ShareActivity" />
+        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.BlogFunActivity" />
+        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.MainActivity" />
+    </application>
+    <uses-permission android:name="READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/home_ratio_img_01" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/home_ratio_img_02" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/home_ratio_img_01" />
+    <ImageView android:id="@id/home_ratio_img_03" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/home_ratio_img_02" />
+    <ImageView android:id="@id/home_ratio_img_04" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/home_ratio_img_03" />
+    <ImageView android:id="@id/home_ratio_img_05" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/home_ratio_img_04" />
+    <ImageView android:id="@id/home_ratio_img_06" android:background="@drawable/ratio_img_style" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/home_ratio_img_05" />
+</RelativeLayout>

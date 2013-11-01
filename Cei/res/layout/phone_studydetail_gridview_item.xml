@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="145.0dip" android:layout_height="100.0dip" android:src="@drawable/courseware_default_icon" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff003380" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:text="宏观经济" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_transbg" android:layout_centerInParent="true" />
+    <TextView android:id="@id/read_report_fltable_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="宏观经济" android:layout_centerInParent="true" style="@style/yangshi_3" />
+</RelativeLayout>

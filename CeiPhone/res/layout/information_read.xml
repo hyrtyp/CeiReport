@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资讯阅读" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_big" />
+        <ImageButton android:id="@id/zjzx_shoucang" android:background="@drawable/zjzx_shoucang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/inf_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:layout_below="@id/top" android:layout_alignParentBottom="true" />
+</RelativeLayout>

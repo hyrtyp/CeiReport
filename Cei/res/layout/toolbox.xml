@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/full_view" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/phone_study_top" android:background="@drawable/phone_study_top_bg" android:layout_width="fill_parent" android:layout_height="47.0px">
+        <ImageView android:gravity="center" android:id="@id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/back_btn" />
+        <TextView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="栏目订阅" android:layout_toRightOf="@id/home" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hyrt.cei.ui.witsea.view.FullGridView android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:horizontalSpacing="45.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+        <RelativeLayout android:id="@id/botton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/home_ceinet" android:background="@drawable/homepage_botton_button_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/home_witsea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_2" android:layout_toLeftOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/home_main_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_num" android:layout_toLeftOf="@id/home_witsea" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/home_announcement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_1" android:layout_toLeftOf="@id/home_main_num" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_left" android:layout_toLeftOf="@id/home_announcement" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/home_personcenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_4" android:layout_toRightOf="@id/home_ceinet" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/home_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_button_5" android:layout_toRightOf="@id/home_personcenter" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_botton_right" android:layout_toRightOf="@id/home_disclaimer" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

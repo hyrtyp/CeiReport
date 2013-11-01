@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/econ_data_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/econ_data_title" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:text="中非对戏降温" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ff3c3c3c" android:id="@id/econ_data_content" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:maxWidth="160.0dip" android:text="nairong" android:maxLines="3" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="#ff3c3c3c" android:gravity="right" android:id="@id/econ_data_time" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="2012.6.26" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/pop_line" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="3.0dip" />
+</LinearLayout>

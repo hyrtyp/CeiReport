@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/read_report_add_shuqian_img" />
+    <TextView android:textSize="25.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:text="加书签" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <ImageButton android:id="@id/yjbg_add_shuqian_exit" android:background="@drawable/read_report_pop_light_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/yjbg_add_shuqian_yes" android:background="@drawable/read_report_pop_light_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

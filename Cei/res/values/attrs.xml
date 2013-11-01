@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="ShelvesView">
+        <attr name="shelfBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ReportView">
+        <attr name="reportBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="BookStore">
+        <attr name="name" format="string" />
+        <attr name="label" format="string" />
+        <attr name="storeClass" format="string" />
+    </declare-styleable>
+</resources>

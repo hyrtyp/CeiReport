@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_szkx_datail_top" android:background="#ff003399" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/econ_zj_num_top_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/econ_data_imgjj" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/econ_main_top_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/econ_data_falsh" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ImageView android:textSize="10.0dip" android:id="@id/econ_main_top_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/econ_data_img_sousuo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/econ_szkx_datail_bottom" android:background="@drawable/phone_econ_data_bottombg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_szkx_datail_botton_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_kx" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_szkx_datail_botton_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zs" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_szkx_detail_botton_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_fx1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_szkx_detail_botton_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zb" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/econ_szkx_detail_lin_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/econ_szkx_datail_bottom" android:layout_below="@id/econ_szkx_datail_top">
+        <WebView android:id="@id/econ_szkx_detail_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

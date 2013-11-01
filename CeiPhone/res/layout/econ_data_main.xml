@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/welcome_econ" android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/econ_main_top" android:background="@drawable/phone_study_topbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:id="@id/econ_main_top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="中经智库" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+        <TextView android:id="@id/econ_main_top_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/yangshi_phone_title_big" />
+        <TextView android:id="@id/econ_main_top_img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="数据查询" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/yangshi_phone_title_small" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/econ_main_content" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_below="@id/econ_main_top">
+        <com.hyrt.readreport.view.DetialGallery android:id="@id/econ_main_grid" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:background="@drawable/read_report_goodbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="24.0px" android:textColor="#ffffffff" android:id="@id/econ_main_lin_title_text" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/econ_main_button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_img_ratio" />
+                <ImageView android:id="@id/econ_main_button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/home_img_ratio" />
+                <ImageView android:id="@id/econ_main_button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/home_img_ratio" />
+                <ImageView android:id="@id/econ_main_button4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/home_img_ratio" />
+                <ImageView android:id="@id/econ_main_button5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/home_img_ratio" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/econ_main_bottom" android:background="@drawable/phone_study_bottombg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="4.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/phone_study_new" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_main_botton_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_kx" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_study_nominate" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_main_botton_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zs" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_study_kind" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_main_botton_4" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_fx1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/phone_study_mymore" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/econ_main_botton_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/econ_data_zb" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/econ_data_pro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_above="@id/econ_main_bottom" android:layout_below="@id/econ_main_content" />
+</RelativeLayout>

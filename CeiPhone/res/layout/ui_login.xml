@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/welcome" android:background="@drawable/background_big" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/login_top" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/login_text" android:background="@drawable/login_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/login_cei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/login_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/login_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_below="@id/login_top" android:layout_centerHorizontal="true">
+            <EditText android:textSize="15.0sp" android:id="@id/ui_login_username" android:background="@drawable/login_username_text" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280.0dip" android:hint="用户名" android:singleLine="true" />
+            <EditText android:textSize="15.0sp" android:id="@id/ui_login_password" android:background="@drawable/login_password_text" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:maxWidth="280.0dip" android:hint="密码" android:password="true" android:singleLine="true" android:layout_below="@id/ui_login_username" />
+            <ImageButton android:id="@id/ui_getpassword" android:background="@drawable/login_forgetpassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/ui_login_password" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/login_middle" android:layout_centerHorizontal="true">
+            <Button android:id="@id/ui_login_login" android:background="@drawable/login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <Button android:id="@id/ui_back" android:background="@drawable/login_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/ui_login_login" android:layout_alignLeft="@id/ui_login_login" />
+            <Button android:id="@id/ui_login_regist" android:background="@drawable/login_regist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/ui_login_login" android:layout_alignRight="@id/ui_login_login" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

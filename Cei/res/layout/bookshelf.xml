@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainlayout" android:background="@drawable/bookself_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/top" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/ib_goodbg_back" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/ib_goodbg_bookshelf" android:background="@drawable/yjbg_book_shezhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="150.0dip" android:text="我的书架" android:layout_toRightOf="@id/home" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/top">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/yjbg_book_find_et" android:background="@drawable/yjbg_book_find_bg" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="搜索" android:singleLine="true" android:drawableLeft="@drawable/yjbg_book_find_bg_small" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/yjbg_book_find" android:background="@drawable/yjbg_book_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/yjbg_book_shu" android:background="@drawable/yjbg_book_shu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/yjbg_book_heng" android:background="@drawable/yjbg_book_heng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mid">
+        <com.hyrt.cei.ui.ebook.view.ShelvesView android:id="@id/grid_shelves" android:paddingLeft="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:columnWidth="160.0px" android:numColumns="4" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ListView android:id="@id/yjbg_book_shelves" android:background="@drawable/phone_studynm_bg" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#ffc8c8c8" android:dividerHeight="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/yjbg_bookself_pro" android:background="#90000000" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/full_view" android:background="@drawable/zjzx_main_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/top" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/home" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_toRightOf="@id/home" android:layout_centerVertical="true" style="@style/yangshi_pad_title" />
+        <ImageButton android:id="@id/zjzx_shuaxin" android:background="@drawable/zjzx_shuaxin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/zjzx_shoucang" android:background="@drawable/zjzx_shoucang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_toLeftOf="@id/zjzx_shuaxin" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/zjzx_sousuo" android:background="@drawable/zjzx_sousuo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_toLeftOf="@id/zjzx_shoucang" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_below="@id/top" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="690.0" android:layout_weight="1.0">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:paddingLeft="40.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="380.0">
+                <LinearLayout android:gravity="center" android:id="@id/aa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/econ_data_img_point0" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point1" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point2" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point3" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                    <ImageView android:id="@id/econ_data_img_point4" android:background="@drawable/econ_data_img_point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/aa" android:layout_centerInParent="true">
+                    <Gallery android:id="@id/econ_data_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="10.0dip" />
+                    <TextView android:textSize="20.0dip" android:textColor="@color/black" android:id="@id/good_report_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tile" android:layout_alignBottom="@id/econ_data_top" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="50.0dip" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="310.0">
+                <LinearLayout android:background="@drawable/zjzx_leftbotton_bar" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="6.0">
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button1" android:background="@drawable/zjzx_left_botton_button_selected" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="最新资讯" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button2" android:background="@drawable/zjzx_left_botton_button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button3" android:background="@drawable/zjzx_left_botton_button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button4" android:background="@drawable/zjzx_left_botton_button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button5" android:background="@drawable/zjzx_left_botton_button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:id="@id/info_left_botton_button6" android:background="@drawable/zjzx_left_botton_button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="更多..." android:layout_weight="1.0" />
+                </LinearLayout>
+                <ListView android:id="@id/info_left_botton_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#ffb9b9b9" android:headerDividersEnabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="@drawable/zjzx_min_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="2.0">
+            <LinearLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:background="@drawable/zjzx_right_botton_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff0e2b76" android:id="@id/info_right_top_botton1" android:background="@drawable/zjzx_right_top_button_selected" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff0e2b76" android:id="@id/info_right_top_botton2" android:background="@drawable/zjzx_right_top_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff0e2b76" android:id="@id/info_right_top_botton3" android:background="@drawable/zjzx_right_top_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff0e2b76" android:id="@id/info_right_top_botton4" android:background="@drawable/zjzx_right_top_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <ListView android:id="@id/info_right_top_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#ffb9b9b9" android:headerDividersEnabled="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:background="@drawable/zjzx_leftbotton_bar" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff414141" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="推荐栏目" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:gravity="center" android:id="@id/info_right_botton_button1" android:background="@drawable/zjzx_left_botton_button_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff07337a" android:gravity="center" android:id="@id/info_right_botton_button2" android:background="@drawable/zjzx_left_botton_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/right_bottom_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+                    <RelativeLayout android:background="#ffffffff" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff181818" android:gravity="center" android:id="@id/info_right_botton_textview1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:text="国学" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        <ImageView android:id="@id/info_right_botton_imageview1" android:background="@drawable/zjzx_right_botton_default" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/info_right_botton_textview1" android:layout_below="@id/info_right_botton_button1" />
+                    </RelativeLayout>
+                    <RelativeLayout android:background="#ffffffff" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff181818" android:gravity="center" android:id="@id/info_right_botton_textview2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:text="健康" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        <ImageView android:id="@id/info_right_botton_imageview2" android:background="@drawable/zjzx_right_botton_default" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/info_right_botton_textview2" android:layout_below="@id/info_right_botton_button2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/weather_Ll" android:background="@drawable/zjzx_main_weatherback" android:paddingLeft="3.0dip" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_weight="2.0">
+                    <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/weather_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="点击此处查看天气" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/econ_data_pro" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>

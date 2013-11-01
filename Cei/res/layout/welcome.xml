@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/welcome" android:background="@drawable/welcome_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="35.0dip" android:src="@drawable/wecome_logo" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/welcome_img_min" android:background="@drawable/welcome_word_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/welcome_iv" android:background="@anim/welcome_loading_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/welcome_img_min" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff1399c4" android:id="@id/welcome_text_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:text="0%" android:layout_below="@id/welcome_img_min" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@drawable/welcome_word_2" android:layout_below="@id/welcome_iv" android:layout_centerHorizontal="true" />
+</RelativeLayout>

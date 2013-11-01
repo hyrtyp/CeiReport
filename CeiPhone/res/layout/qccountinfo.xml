@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff0f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qccountinfo" android:background="@drawable/grzx_zhxx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/qccountinfo_line" android:background="@drawable/grzx_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/qccountinfo" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/qccountinfo_line">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:weightSum="3.0">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="账号:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/personinfo_userid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:weightSum="3.0">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="积分:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/personinfo_integral" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

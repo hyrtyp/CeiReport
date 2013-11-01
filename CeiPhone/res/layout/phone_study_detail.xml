@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/full_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/phone_study_top" />
+    <ScrollView android:background="#fff0f4f6" android:paddingTop="1.0px" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/phone_study_detail_icon" android:layout_width="110.0dip" android:layout_height="100.0dip" android:src="@drawable/courseware_default_icon" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.hyrt.cei.ui.phonestudy.view.AlwaysMarqueeTextView android:textSize="28.0px" android:textColor="#ff054b93" android:ellipsize="marquee" android:id="@id/phone_study_detail_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="274.0px" android:layout_height="wrap_content" android:text="主题 ：美国决定对中国输美荧光增白剂征收高额反倾销关税" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                <TextView android:id="@id/phone_study_detail_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="主讲人 ：范先生/张先生" style="@style/yangshi_2" />
+                                <TextView android:id="@id/phone_study_detail_protime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="发布时间 ：2012-12-31 15:23:50" style="@style/yangshi_2" />
+                                <TextView android:id="@id/phone_study_detail_timelength" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="课件时长 ：1500" style="@style/yangshi_2" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+                                <ImageView android:id="@id/phone_study_detail_preload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_download_btn" />
+                                <ImageView android:layout_gravity="center_horizontal" android:id="@id/phone_study_detail_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_play_btn" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <ImageView android:id="@id/phone_study_detail_addcourse" android:background="@drawable/phone_study_addcourse_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:background="#ffd6e1e5" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="24.0px" android:textStyle="bold" android:textColor="#ff003380" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="课件详情 ：" android:maxLines="1" />
+                <TextView android:textSize="20.0px" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/phone_study_detail_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:minHeight="90.0dip" android:text="课件内容" />
+            </LinearLayout>
+            <ImageView android:background="#ffd6e1e5" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_aboutclass" />
+                </RelativeLayout>
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="80.0dip">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.hyrt.cei.ui.phonestudy.view.GGridView android:id="@id/phone_study_gridview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/nodrawable" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <ImageView android:background="#ffd6e1e5" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="24.0px" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="用户评价 ：" />
+                <EditText android:id="@id/phone_study_detail_say_inputEdit" android:background="@drawable/phone_study_detail_say_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:minHeight="50.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <ImageView android:id="@id/phone_study_submit" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/phone_study_detail_say_save" android:layout_alignParentRight="true" />
+                    <ProgressBar android:id="@id/phone_study_submit_progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/phone_study_give" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/phone_study_detail_say_share" android:layout_toLeftOf="@id/phone_study_submit" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/weibosdk_dialog_title_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="5.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:isScrollContainer="true">
+            <TextView android:id="@id/textView1" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/testcontent" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:isScrollContainer="false">
+        <Button android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibosdk_comment" />
+        <Button android:id="@id/forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/weibosdk_forward" />
+        <Button android:id="@id/fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibosdk_fav" />
+    </LinearLayout>
+</LinearLayout>

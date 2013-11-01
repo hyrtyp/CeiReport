@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="12.0sp" android:gravity="center" android:id="@id/phone_study_morebtn" android:background="#50ffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="更多..." />
+</LinearLayout>

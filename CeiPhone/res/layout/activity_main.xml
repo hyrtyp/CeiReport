@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/auth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="微博认证OAUTH2.0" android:onClick="onOauth" />
+    <Button android:id="@id/sso" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:text="单点登录sso" android:layout_toRightOf="@id/auth" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/auth" />
+    <Button android:id="@id/sendBtn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享" android:layout_centerInParent="true" />
+    <Button android:id="@id/apiBtn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博功能演示" android:layout_below="@id/sendBtn" />
+    <Button android:id="@id/apiCancel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注销" android:layout_toRightOf="@id/apiBtn" android:layout_below="@id/sendBtn" />
+</RelativeLayout>

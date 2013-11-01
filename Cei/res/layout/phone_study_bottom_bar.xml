@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/phone_study_bottom" android:paddingLeft="100.0dip" android:paddingRight="100.0dip" android:layout_width="fill_parent" android:layout_height="100.0px" android:weightSum="8.0" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_selector" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_new_selector" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_nominate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_nominate_selector" /> />
+</LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_free_selector" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_kind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_kind_selector" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_self" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_self_selector" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_study" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_study_selector" android:contentDescription="study_page_iv" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/phone_study_say" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_say_selector" />
+    </LinearLayout>
+</LinearLayout>

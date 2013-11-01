@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qccountinfo" android:background="@drawable/person_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="30.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/qccountinfo">
+        <ImageView android:id="@id/qccountinfo_line" android:background="@drawable/phone_study_dotted_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/qccountinfo_line">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="登录名:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/personinfo_loginname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin1" android:layout_alignLeft="@id/lin1">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="姓名:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/personinfo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin2">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="性别:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/personinfo_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin3">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="证件类型:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/personinfo_zhengjian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin4">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="证件号码:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/personinfo_zhengjiannum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin5">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="电话:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/personinfo_phonenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin6">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="电子邮箱:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/personinfo_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/lin8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/lin7">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="单位:" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/personinfo_danwei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

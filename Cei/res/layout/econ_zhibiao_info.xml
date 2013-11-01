@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/econ_title" layout="@layout/econ_title" />
+    <RelativeLayout android:id="@id/econ_part_bottom" android:background="@drawable/bottom_bg" android:paddingLeft="200.0dip" android:paddingRight="200.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="6.0" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_econ_zbinfo_home" android:background="@drawable/phone_study" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_econ_zbinfo_sz" android:background="@drawable/econ_szkx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/iv_econ_zbinfo_zz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数据查询" android:layout_weight="1.0" android:layout_centerInParent="true" style="@style/yangshi_pad_title" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_econ_zbinfo_fx" android:background="@drawable/econ_fxyc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_econ_zbinfo_zb" android:background="@drawable/econ_zbcx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/econ_sjcx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/jjsj_back_wai" android:padding="70.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_above="@id/econ_part_bottom" android:layout_below="@id/econ_title">
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/jjsj_back_nei" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="fill_vertical" android:id="@id/title" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+                <TextView android:textSize="25.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="国内生产总值" />
+                <TextView android:textSize="25.0dip" android:textColor="@color/black" android:gravity="center" android:paddingLeft="500.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="English" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/bottle" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="40.0dip" />
+                <TextView android:textSize="25.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="English" />
+            </LinearLayout>
+            <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottle" android:layout_below="@id/title">
+                <ImageView android:id="@id/wv_zb_map" android:paddingLeft="34.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/wv_zb_map1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

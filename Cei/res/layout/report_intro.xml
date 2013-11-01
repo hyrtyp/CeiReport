@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/report_intro_main" android:background="@drawable/report_intro_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:background="@drawable/top" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/ib_bg_back" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/report_intro_bookshelf" android:background="@drawable/bookshelf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:src="@drawable/yjbg_jianj" android:layout_toRightOf="@id/ib_bg_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_below="@id/top" android:layout_alignParentBottom="true">
+            <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ImageView android:id="@id/report_intro_book" android:background="@drawable/report1" android:layout_width="100.0dip" android:layout_height="130.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/report_intro_book" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000088" android:id="@id/report_intro_content" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报告主题" />
+                    <ImageView android:background="@drawable/phone_study_dotted_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="center_vertical" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/bglitt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/report_intro_zuoz_bq" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作者：" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/report_intro_zuoz" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张三" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:background="@drawable/zjzx_point" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/report_intro_price_bq" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格：" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ffff0000" android:id="@id/report_intro_price" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:background="@drawable/zjzx_point" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布时间：" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/report_intro_time" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2012" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton android:id="@id/report_intro_read" android:background="#00000000" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yjbg_read" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/report_intro_text_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:layout_weight="4.0">
+                <ImageView android:id="@id/report_intro_jj" android:background="@drawable/yjbg_report_info_shuoming" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="22.0px" android:textColor="#ff000000" android:id="@id/report_intro_jiej" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/report_intro_jj" android:lineSpacingExtra="3.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/report_intro_text_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="3.0">
+                <ImageView android:id="@id/report_intro_ml" android:background="@drawable/report_intro_ml" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="22.0px" android:textColor="#ff000000" android:id="@id/report_intro_mul" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/report_intro_ml" android:lineSpacingExtra="3.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/info_point" android:background="@drawable/zjzx_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/info_mark" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/info_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/info_mark" android:layout_toRightOf="@id/info_point" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff3c3c3c" android:id="@id/info_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff3c3c3c" android:gravity="center_vertical" android:id="@id/info_subhead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+</LinearLayout>

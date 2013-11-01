@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/econ_data_ea_item_child" android:layout_width="252.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/econ_data_ea_item_child_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" />
+    <TextView android:textSize="16.0px" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/econ_data_ea_item_child_tv" android:paddingRight="15.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:text="child" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

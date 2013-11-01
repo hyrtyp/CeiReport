@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#ff333333</color>
+    <color name="dialog_title_blue">#ff9cccf7</color>
+    <color name="border_color">#ff3e4145</color>
+    <color name="gray">#fff5f5f5</color>
+    <color name="common_white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <item type="color" name="banner_text_color">@*android:color/black</item>
+    <item type="color" name="grid_text_color">@*android:color/black</item>
+    <color name="commom_dark">#ff3b3b3b</color>
+    <color name="common_light_dark">#ff6b6b6b</color>
+    <color name="white">#ffffffff</color>
+    <color name="popwin_bg">#40838d9b</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="weibosdk_transparent">#00000000</color>
+    <color name="weibosdk_text_num_gray">#ff333333</color>
+    <color name="weibosdk_dialog_title_blue">#ff9cccf7</color>
+</resources>

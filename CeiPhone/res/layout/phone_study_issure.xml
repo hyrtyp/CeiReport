@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#40838d9b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/phone_study_issure_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/phone_study_issure_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff003380" android:id="@id/issure_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="确认此次操作?" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ff000000" />
+        <RelativeLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="17.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/phone_study_issure_sure_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_issure_sure" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/phone_study_issure_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_study_issure_cancel" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
