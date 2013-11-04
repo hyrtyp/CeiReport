@@ -21,7 +21,6 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/read_report_jp1" />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -76,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/read_report_find1" />
+                android:background="@drawable/dzb_announcement" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -87,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/read_report_find1" />
+                android:background="@drawable/dzb_person" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -98,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/read_report_find1" />
+                android:background="@drawable/phone_study_about" />
         </RelativeLayout>
     </LinearLayout>
 

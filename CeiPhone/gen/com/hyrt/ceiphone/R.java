@@ -85,6 +85,8 @@ public final class R {
         public static final int del_pic=0x7f02001f;
         public static final int delete_back=0x7f020020;
         public static final int dialog_bg=0x7f020021;
+        public static final int dzb_announcement=0x7f020195;
+        public static final int dzb_person=0x7f020196;
         public static final int econ_bj=0x7f020022;
         public static final int econ_bj_fxyc=0x7f020023;
         public static final int econ_click_bj=0x7f020024;
@@ -203,6 +205,7 @@ public final class R {
         public static final int nodrawable=0x7f020095;
         public static final int person_info=0x7f020096;
         public static final int phone_econ_data_bottombg=0x7f020097;
+        public static final int phone_study_about=0x7f020197;
         public static final int phone_study_aboutclass=0x7f020098;
         public static final int phone_study_addcourse_btn=0x7f020099;
         public static final int phone_study_basetitle=0x7f02009a;
@@ -772,6 +775,7 @@ public final class R {
         public static final int regist_botton=0x7f0a01a5;
         public static final int regist_top=0x7f0a01a4;
         public static final int relativeLayout1=0x7f0a019c;
+        public static final int report_bottom_menu=0x7f0a01c4;
         public static final int report_intro_book=0x7f0a015c;
         public static final int report_intro_bookshelf=0x7f0a015b;
         public static final int report_intro_content=0x7f0a015e;
