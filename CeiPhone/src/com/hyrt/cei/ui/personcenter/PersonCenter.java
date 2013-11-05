@@ -5,6 +5,10 @@ import android.app.ActivityGroup;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
@@ -25,16 +29,22 @@ import com.hyrt.ceiphone.common.HomePageDZB;
  * @author Administrator
  * 
  */
-public class PersonCenter extends ActivityGroup implements OnClickListener {
+public class PersonCenter extends FragmentActivity implements OnClickListener {
 	private Button person_info, qccount_info, change_password;
 	private RelativeLayout re;
 	private Intent intent;
 	private String loginName;
 
+	private Fragment current;
+	private Fragment mContent;
+	private Fragment fragmentPersonInfo;
+	private Fragment fragmentQccountInfo;
+	private Fragment fragmentChangePassword;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		ContainerActivity.activities.add(this);
+		// ContainerActivity.activities.add(this);
 		setContentView(R.layout.personcentered);
 		overridePendingTransition(R.anim.push_in, R.anim.push_out);
 		SharedPreferences settings = getSharedPreferences("loginInfo",
@@ -44,11 +54,12 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 	}
 
 	private void init() {
-		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
-		for (int i = 0; i < bottomsLl.getChildCount(); i++) {
-			((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
-					.setOnClickListener(this);
-		}
+		// LinearLayout bottomsLl = (LinearLayout)
+		// findViewById(R.id.bottoms_Ll);
+		// for (int i = 0; i < bottomsLl.getChildCount(); i++) {
+		// ((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
+		// .setOnClickListener(this);
+		// }
 		findViewById(R.id.person_info).setOnClickListener(this);
 		findViewById(R.id.qccount_info).setOnClickListener(this);
 		findViewById(R.id.change_password).setOnClickListener(this);
@@ -56,7 +67,15 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 		person_info = (Button) findViewById(R.id.person_info);
 		qccount_info = (Button) findViewById(R.id.qccount_info);
 		change_password = (Button) findViewById(R.id.change_password);
-		SwitchActivity(0);
+
+		FragmentManager manager = getSupportFragmentManager();
+		FragmentTransaction fragmentTransaction = manager.beginTransaction();
+
+		mContent = current = fragmentPersonInfo = new PersonInfo();
+		fragmentTransaction.add(R.id.pc_re, fragmentPersonInfo);
+		fragmentTransaction.commit();
+
+		// SwitchActivity(0);
 	}
 
 	@Override
@@ -65,21 +84,35 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 		PersonCenter.this.finish();
 	}
 
-	void SwitchActivity(int id) {
-		re.removeAllViews();
-		Intent intent = null;
-		if (id == 0) {
-			intent = new Intent(PersonCenter.this, PersonInfo.class);
-		} else if (id == 1) {
-			intent = new Intent(PersonCenter.this, QccountInfo.class);
-		} else if (id == 2) {
-			intent = new Intent(PersonCenter.this, ChangePassword.class);
+	// void SwitchActivity(int id) {
+	// re.removeAllViews();
+	// Intent intent = null;
+	// if (id == 0) {
+	// intent = new Intent(PersonCenter.this, PersonInfo.class);
+	// } else if (id == 1) {
+	// intent = new Intent(PersonCenter.this, QccountInfo.class);
+	// } else if (id == 2) {
+	// intent = new Intent(PersonCenter.this, ChangePassword.class);
+	// }
+	// intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	// @SuppressWarnings("deprecation")
+	// Window subActivity = getLocalActivityManager().startActivity(
+	// "subActivity", intent);
+	// re.addView(subActivity.getDecorView(), LayoutParams.FILL_PARENT,
+	// LayoutParams.FILL_PARENT);
+	// }
+
+	private void switchContent(Fragment from, Fragment to) {
+		if (mContent != to) {
+			mContent = to;
+			FragmentManager manager = getSupportFragmentManager();
+			FragmentTransaction transaction = manager.beginTransaction();
+			if (!to.isAdded()) { // 先判断是否被add过
+				transaction.hide(from).add(R.id.pc_re, to).commit(); // 隐藏当前的fragment，add下一个到Activity中
+			} else {
+				transaction.hide(from).show(to).commit(); // 隐藏当前的fragment，显示下一个
+			}
 		}
-		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		Window subActivity = getLocalActivityManager().startActivity(
-				"subActivity", intent);
-		re.addView(subActivity.getDecorView(), LayoutParams.FILL_PARENT,
-				LayoutParams.FILL_PARENT);
 	}
 
 	@Override
@@ -108,7 +141,11 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 					R.drawable.grzx_2_1);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_1);
-			SwitchActivity(0);
+//			SwitchActivity(0);
+			if(fragmentPersonInfo==null){
+				fragmentPersonInfo=new PersonInfo();
+			}
+			switchContent(mContent, fragmentPersonInfo);
 			break;
 		case R.id.qccount_info:
 			findViewById(R.id.person_info).setBackgroundResource(
@@ -117,7 +154,11 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 					R.drawable.grzx_2_0);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_1);
-			SwitchActivity(1);
+//			SwitchActivity(1);
+			if(fragmentQccountInfo==null){
+				fragmentQccountInfo=new QccountInfo();
+			}
+			switchContent(mContent,fragmentQccountInfo);
 			break;
 		case R.id.change_password:
 			findViewById(R.id.person_info).setBackgroundResource(
@@ -126,11 +167,15 @@ public class PersonCenter extends ActivityGroup implements OnClickListener {
 					R.drawable.grzx_2_1);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_0);
-			SwitchActivity(2);
+//			SwitchActivity(2);
+			if(fragmentChangePassword==null){
+				fragmentChangePassword=new ChangePassword();
+			}
+			switchContent(mContent,fragmentChangePassword);
 			break;
 		}
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		ContainerActivity.activities.remove(this);

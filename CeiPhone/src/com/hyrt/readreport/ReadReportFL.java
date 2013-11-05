@@ -211,7 +211,7 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		dataHelper = ((CeiApplication) getApplication()).dataHelper;
 		initView();
-		imgLight();
+//		imgLight();
 		initData();
 	}
 
@@ -221,14 +221,14 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		flTable.setVisibility(View.VISIBLE);
 		flGridView1 = (GGridView) findViewById(R.id.read_report_fl_gv);
 		flGridView2 = (GGridView) findViewById(R.id.read_report_fl_gv2);
-		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-		goodImg.setOnClickListener(this);
-		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-		paihangImg.setOnClickListener(this);
-		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-		fenleiImg.setOnClickListener(this);
-		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-		mianfeiImg.setOnClickListener(this);
+//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
+//		goodImg.setOnClickListener(this);
+//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+//		paihangImg.setOnClickListener(this);
+//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+//		fenleiImg.setOnClickListener(this);
+//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+//		mianfeiImg.setOnClickListener(this);
 		/*
 		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
 		 * homeImg.setOnClickListener(this);
@@ -237,8 +237,8 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		iconImg.setText("报告分类");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-		findImg = (ImageView) findViewById(R.id.read_report_find);
-		findImg.setOnClickListener(this);
+//		findImg = (ImageView) findViewById(R.id.read_report_find);
+//		findImg.setOnClickListener(this);
 		moreText = (TextView) findViewById(R.id.read_report_more);
 		moreText.setOnClickListener(this);
 		backImg = (TextView) findViewById(R.id.ib_findbg_back);

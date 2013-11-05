@@ -62,27 +62,27 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.read_report_find);
 		initView();
-		imgLight();
+//		imgLight();
 		initData();
 	}
 	private void initView() {
 		goodList = (ListView) findViewById(R.id.read_report_data_lv);
-		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-		goodImg.setOnClickListener(this);
-		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-		paihangImg.setOnClickListener(this);
-		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-		fenleiImg.setOnClickListener(this);
-		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-		mianfeiImg.setOnClickListener(this);
+//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
+//		goodImg.setOnClickListener(this);
+//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+//		paihangImg.setOnClickListener(this);
+//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+//		fenleiImg.setOnClickListener(this);
+//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+//		mianfeiImg.setOnClickListener(this);
 		/*homeImg = (ImageView) findViewById(R.id.read_report_home);
 		homeImg.setOnClickListener(this);*/
 		iconImg= (TextView) findViewById(R.id.read_report_topicon);
 		iconImg.setText("精彩报告");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-		findImg = (ImageView) findViewById(R.id.read_report_find);
-		findImg.setOnClickListener(this);
+//		findImg = (ImageView) findViewById(R.id.read_report_find);
+//		findImg.setOnClickListener(this);
 		moreText = (TextView) findViewById(R.id.read_report_more);
 		moreText.setOnClickListener(this);
 		backImg=(TextView) findViewById(R.id.ib_findbg_back);

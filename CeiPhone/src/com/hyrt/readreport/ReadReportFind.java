@@ -83,7 +83,7 @@ public class ReadReportFind extends ContainerActivity implements
 		setContentView(R.layout.read_report_find);
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		initView();
-		imgLight();
+//		imgLight();
 		// initData();
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
@@ -93,15 +93,15 @@ public class ReadReportFind extends ContainerActivity implements
 	private void initView() {
 		findLine = (LinearLayout) findViewById(R.id.find_line);
 		findLine.setVisibility(View.VISIBLE);
-		goodList = (ListView) findViewById(R.id.read_report_data_lv);
-		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-		goodImg.setOnClickListener(this);
-		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-		paihangImg.setOnClickListener(this);
-		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-		fenleiImg.setOnClickListener(this);
-		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-		mianfeiImg.setOnClickListener(this);
+//		goodList = (ListView) findViewById(R.id.read_report_data_lv);
+//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
+//		goodImg.setOnClickListener(this);
+//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+//		paihangImg.setOnClickListener(this);
+//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+//		fenleiImg.setOnClickListener(this);
+//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+//		mianfeiImg.setOnClickListener(this);
 		/*
 		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
 		 * homeImg.setOnClickListener(this);
@@ -110,8 +110,8 @@ public class ReadReportFind extends ContainerActivity implements
 		iconImg.setText("搜索报告");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-		findImg = (ImageView) findViewById(R.id.read_report_findreport);
-		findImg.setOnClickListener(this);
+//		findImg = (ImageView) findViewById(R.id.read_report_findreport);
+//		findImg.setOnClickListener(this);
 		reportName = (EditText) findViewById(R.id.read_report_ettext);
 		SharedPreferences settings = getSharedPreferences("search_result",Activity.MODE_PRIVATE);
 		String historyStr = settings.getString("history_report", "");

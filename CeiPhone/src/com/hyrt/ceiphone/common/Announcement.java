@@ -57,11 +57,11 @@ public class Announcement extends ContainerActivity implements OnClickListener {
 	}
 
 	public void init() {
-		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
-		for (int i = 0; i < bottomsLl.getChildCount(); i++) {
-			((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
-					.setOnClickListener(this);
-		}
+//		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
+//		for (int i = 0; i < bottomsLl.getChildCount(); i++) {
+//			((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
+//					.setOnClickListener(this);
+//		}
 		list = (ListView) findViewById(R.id.tzgg_list);
 		refreshListData();
 		list.setOnItemClickListener(new OnItemClickListener() {

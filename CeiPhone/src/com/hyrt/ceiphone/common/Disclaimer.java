@@ -69,11 +69,11 @@ public class Disclaimer extends ContainerActivity implements OnClickListener {
 	}
 
 	private void init() {
-		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
-		for (int i = 0; i < bottomsLl.getChildCount(); i++) {
-			((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
-					.setOnClickListener(this);
-		}
+//		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
+//		for (int i = 0; i < bottomsLl.getChildCount(); i++) {
+//			((RelativeLayout) (bottomsLl.getChildAt(i))).getChildAt(0)
+//					.setOnClickListener(this);
+//		}
 		findViewById(R.id.abouts_us).setOnClickListener(this);
 		findViewById(R.id.usesinfo).setOnClickListener(this);
 		findViewById(R.id.mazminfo).setOnClickListener(this);

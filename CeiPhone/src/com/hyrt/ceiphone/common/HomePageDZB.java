@@ -113,6 +113,9 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 		refreshListData();
 		showLoginBtnByUserName();
 		installMainGridView();
+//		startActivity(new Intent().setClass(this, ReadReportMainActivity.class));
+//		this.finish();
+		
 	}
 
 	// 根据登陆与否判断是否显示登陆按钮

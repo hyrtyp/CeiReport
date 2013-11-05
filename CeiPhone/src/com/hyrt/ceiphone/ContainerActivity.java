@@ -5,8 +5,9 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
-public class ContainerActivity extends Activity {
+public class ContainerActivity extends FragmentActivity {
 	
 	// 维护activity集合
 	public static final List<Activity> activities = new ArrayList<Activity>();
