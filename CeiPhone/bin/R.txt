@@ -721,6 +721,7 @@ int id abs__submit_area 0x7f0a01f3
 int id abs__textButton 0x7f0a01d7
 int id abs__title 0x7f0a01df
 int id abs__up 0x7f0a01cc
+int id add 0x7f0a01f7
 int id apiBtn 0x7f0a0008
 int id apiCancel 0x7f0a0009
 int id app_icon 0x7f0a0025
@@ -1312,6 +1313,7 @@ int layout webview 0x7f030064
 int layout weibosdk_share_mblog_view 0x7f030065
 int layout welcome 0x7f030066
 int layout witsea_pop 0x7f030067
+int menu actionbar_menu 0x7f0d0000
 int string abs__action_bar_home_description 0x7f080020
 int string abs__action_bar_up_description 0x7f080021
 int string abs__action_menu_overflow_description 0x7f080022
@@ -1395,12 +1397,17 @@ int style TextAppearance_Sherlock_Widget_PopupMenu 0x7f090048
 int style TextAppearance_Sherlock_Widget_PopupMenu_Large 0x7f090049
 int style TextAppearance_Sherlock_Widget_PopupMenu_Small 0x7f09004b
 int style TextAppearance_Sherlock_Widget_TextView_SpinnerItem 0x7f09004d
+int style Theme_Cei 0x7f090066
+int style Theme_Cei_Sherlock 0x7f090063
+int style Theme_Cei_v 0x7f090067
 int style Theme_Sherlock 0x7f09005d
 int style Theme_Sherlock_Light 0x7f09005e
 int style Theme_Sherlock_Light_DarkActionBar 0x7f09005f
 int style Theme_Sherlock_Light_NoActionBar 0x7f090061
 int style Theme_Sherlock_NoActionBar 0x7f090060
 int style Widget 0x7f090009
+int style Widget_Cei_ActionBar 0x7f090062
+int style Widget_Cei_ActionBar_Title 0x7f090064
 int style Widget_Sherlock_ActionBar 0x7f09000b
 int style Widget_Sherlock_ActionBar_Solid 0x7f09000c
 int style Widget_Sherlock_ActionBar_TabBar 0x7f090013
@@ -1453,7 +1460,7 @@ int style yangshi_3 0x7f090002
 int style yangshi_4 0x7f090003
 int style yangshi_5 0x7f090004
 int style yangshi_pad_title 0x7f090005
-int style yangshi_phone_bottom_menu 0x7f090062
+int style yangshi_phone_bottom_menu 0x7f090065
 int style yangshi_phone_title_big 0x7f090006
 int style yangshi_phone_title_small 0x7f090007
 int[] styleable SherlockActionBar { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c, 0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055 }

@@ -1390,6 +1390,7 @@ containing a value of this type.
         public static final int abs__textButton=0x7f0a01d7;
         public static final int abs__title=0x7f0a01df;
         public static final int abs__up=0x7f0a01cc;
+        public static final int add=0x7f0a01f7;
         public static final int apiBtn=0x7f0a0008;
         public static final int apiCancel=0x7f0a0009;
         public static final int app_icon=0x7f0a0025;
@@ -1986,6 +1987,9 @@ containing a value of this type.
         public static final int welcome=0x7f030066;
         public static final int witsea_pop=0x7f030067;
     }
+    public static final class menu {
+        public static final int actionbar_menu=0x7f0d0000;
+    }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
@@ -2098,12 +2102,17 @@ containing a value of this type.
         public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large=0x7f090049;
         public static final int TextAppearance_Sherlock_Widget_PopupMenu_Small=0x7f09004b;
         public static final int TextAppearance_Sherlock_Widget_TextView_SpinnerItem=0x7f09004d;
+        public static final int Theme_Cei=0x7f090066;
+        public static final int Theme_Cei_Sherlock=0x7f090063;
+        public static final int Theme_Cei_v=0x7f090067;
         public static final int Theme_Sherlock=0x7f09005d;
         public static final int Theme_Sherlock_Light=0x7f09005e;
         public static final int Theme_Sherlock_Light_DarkActionBar=0x7f09005f;
         public static final int Theme_Sherlock_Light_NoActionBar=0x7f090061;
         public static final int Theme_Sherlock_NoActionBar=0x7f090060;
         public static final int Widget=0x7f090009;
+        public static final int Widget_Cei_ActionBar=0x7f090062;
+        public static final int Widget_Cei_ActionBar_Title=0x7f090064;
         public static final int Widget_Sherlock_ActionBar=0x7f09000b;
         public static final int Widget_Sherlock_ActionBar_Solid=0x7f09000c;
         public static final int Widget_Sherlock_ActionBar_TabBar=0x7f090013;
@@ -2156,7 +2165,7 @@ containing a value of this type.
         public static final int yangshi_4=0x7f090003;
         public static final int yangshi_5=0x7f090004;
         public static final int yangshi_pad_title=0x7f090005;
-        public static final int yangshi_phone_bottom_menu=0x7f090062;
+        public static final int yangshi_phone_bottom_menu=0x7f090065;
         public static final int yangshi_phone_title_big=0x7f090006;
         public static final int yangshi_phone_title_small=0x7f090007;
     }

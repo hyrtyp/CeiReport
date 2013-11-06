@@ -10,7 +10,8 @@
         android:id="@id/top"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/phone_study_topbg" >
+        android:background="@drawable/phone_study_topbg" 
+        android:visibility="gone">
 
         <TextView
             android:id="@id/ib_findbg_back"

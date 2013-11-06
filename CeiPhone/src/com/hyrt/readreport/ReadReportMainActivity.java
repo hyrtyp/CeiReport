@@ -6,6 +6,8 @@ import java.util.List;
 import com.hyrt.cei.adapter.GoodReportAdapter;
 import com.hyrt.cei.adapter.NewsReportAdapter;
 import com.hyrt.cei.application.CeiApplication;
+import com.hyrt.cei.update.UpdateManager;
+import com.hyrt.cei.util.AsyncImageLoader;
 import com.hyrt.cei.util.MyTools;
 import com.hyrt.cei.util.WriteOrRead;
 import com.hyrt.cei.util.XmlUtil;
@@ -19,6 +21,7 @@ import com.hyrt.ceiphone.common.HomePageDZB;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -157,6 +160,10 @@ public class ReadReportMainActivity extends ContainerActivity implements
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.read_report_main);
+		 UpdateManager manager = new UpdateManager(this);
+	        // 检查软件更新
+	        manager.isUpdate();
+		
 		MODEL_NAME = ((CeiApplication) getApplication()).nowStart;// 获取当前业务名称。
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		bbStart=columnEntry.getColumnEntryChilds().get(0).getName().equals("通用版")?true:false;
@@ -166,10 +173,10 @@ public class ReadReportMainActivity extends ContainerActivity implements
 	}
 
 	private void initView() {
-		TextView topicon=(TextView)findViewById(R.id.title);
-		topicon.setText(MODEL_NAME);
-		backImg = (TextView) findViewById(R.id.read_report_back);
-		backImg.setOnClickListener(this);
+//		TextView topicon=(TextView)findViewById(R.id.title);
+//		topicon.setText(MODEL_NAME);
+//		backImg = (TextView) findViewById(R.id.read_report_back);
+//		backImg.setOnClickListener(this);
 		goodReport = (Gallery) findViewById(R.id.read_report_main_ga);
 		newsReport = (GridView) findViewById(R.id.read_report_main_gv);
 		title = (TextView) findViewById(R.id.read_report_title);
@@ -190,8 +197,9 @@ public class ReadReportMainActivity extends ContainerActivity implements
 		point3 = (ImageView) findViewById(R.id.read_report_point3);
 		point4 = (ImageView) findViewById(R.id.read_report_point4);
 		point5 = (ImageView) findViewById(R.id.read_report_point5);
-		bookself = (ImageView) findViewById(R.id.read_report_bookself);
-		bookself.setOnClickListener(this);
+//		bookself = (ImageView) findViewById(R.id.read_report_bookself);
+//		bookself.setOnClickListener(this);
+		
 	}
 
 	private void initData() {

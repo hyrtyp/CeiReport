@@ -26,31 +26,33 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ReadReportGoodActivity extends ContainerActivity implements OnClickListener {
+public class ReadReportGoodActivity extends ContainerActivity implements
+		OnClickListener {
 	private ColumnEntry columnEntry;
 	private ListView goodList;
-	private ImageView goodImg, paihangImg, fenleiImg, mianfeiImg, homeImg,findImg,
-			bookself;
+	private ImageView goodImg, paihangImg, fenleiImg, mianfeiImg, homeImg,
+			findImg, bookself;
 	private List<Report> goodData;
 	private int pageindex = 1;
-	private TextView moreText,iconImg,backImg;
+	private TextView moreText, iconImg, backImg;
 	ReadReportAdapter adapter;
 	private String bgId;
 	private Handler goodHandler = new Handler() {
 
 		@Override
 		public void handleMessage(Message msg) {
-			if(msg.arg1 == 12){
-				if(msg.arg2<20){
+			if (msg.arg1 == 12) {
+				if (msg.arg2 < 20) {
 					moreText.setVisibility(View.GONE);
 				}
-				if(adapter!=null)
-				adapter.notifyDataSetChanged();
-			}else {
-			adapter=new ReadReportAdapter(ReadReportGoodActivity.this, goodData, goodList);
-			goodList.setAdapter(adapter);
-			if(goodData.size()<20)
-				moreText.setVisibility(View.GONE);
+				if (adapter != null)
+					adapter.notifyDataSetChanged();
+			} else {
+				adapter = new ReadReportAdapter(ReadReportGoodActivity.this,
+						goodData, goodList);
+				goodList.setAdapter(adapter);
+				if (goodData.size() < 20)
+					moreText.setVisibility(View.GONE);
 			}
 		}
 
@@ -62,32 +64,36 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.read_report_find);
 		initView();
-//		imgLight();
+		// imgLight();
 		initData();
 	}
+
 	private void initView() {
 		goodList = (ListView) findViewById(R.id.read_report_data_lv);
-//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-//		goodImg.setOnClickListener(this);
-//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-//		paihangImg.setOnClickListener(this);
-//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-//		fenleiImg.setOnClickListener(this);
-//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-//		mianfeiImg.setOnClickListener(this);
-		/*homeImg = (ImageView) findViewById(R.id.read_report_home);
-		homeImg.setOnClickListener(this);*/
-		iconImg= (TextView) findViewById(R.id.read_report_topicon);
+		// goodImg = (ImageView) findViewById(R.id.read_report_jp);
+		// goodImg.setOnClickListener(this);
+		// paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+		// paihangImg.setOnClickListener(this);
+		// fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+		// fenleiImg.setOnClickListener(this);
+		// mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+		// mianfeiImg.setOnClickListener(this);
+		/*
+		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
+		 * homeImg.setOnClickListener(this);
+		 */
+		iconImg = (TextView) findViewById(R.id.read_report_topicon);
 		iconImg.setText("精彩报告");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-//		findImg = (ImageView) findViewById(R.id.read_report_find);
-//		findImg.setOnClickListener(this);
+		// findImg = (ImageView) findViewById(R.id.read_report_find);
+		// findImg.setOnClickListener(this);
 		moreText = (TextView) findViewById(R.id.read_report_more);
 		moreText.setOnClickListener(this);
-		backImg=(TextView) findViewById(R.id.ib_findbg_back);
+		backImg = (TextView) findViewById(R.id.ib_findbg_back);
 		backImg.setOnClickListener(this);
 	}
+
 	private void initData() {
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		goodData = new ArrayList<Report>();
@@ -110,9 +116,10 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 				@Override
 				public void run() {
 					// 所有精彩报告
-					//colBg = columnEntry.getColByName("精品推荐");
+					// colBg = columnEntry.getColByName("精品推荐");
 					if (bgId != null && !bgId.equals("")) {
-						String retData = Service.queryReport(bgId, "bg", pageindex+"");
+						String retData = Service.queryReport(bgId, "bg",
+								pageindex + "");
 						try {
 							goodData.clear();
 							goodData.addAll(XmlUtil.parseReport(retData));
@@ -148,7 +155,7 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 		Intent intent = null;
 		switch (v.getId()) {
 		case R.id.read_report_jp:
-			
+
 			break;
 		case R.id.read_report_ph:
 			intent = new Intent(this, ReadReportPH.class);
@@ -162,10 +169,10 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 			intent = new Intent(this, ReadReportMF.class);
 			startActivity(intent);
 			break;
-//		case R.id.read_report_home:
-//			intent = new Intent(this, HomePageDZB.class);
-//			startActivity(intent);
-//			break;
+		// case R.id.read_report_home:
+		// intent = new Intent(this, HomePageDZB.class);
+		// startActivity(intent);
+		// break;
 		case R.id.ib_findbg_bookshelf:
 			intent = new Intent(this, CeiShelfBookActivity.class);
 			startActivity(intent);
@@ -180,14 +187,15 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 			break;
 		case R.id.read_report_more:
 			// 加载更多
-			if (bgId != null&&!bgId.equals("")) {
+			if (bgId != null && !bgId.equals("")) {
 				pageindex++;
-				String retData = Service.queryReport(bgId, "bg", pageindex+"");
+				String retData = Service
+						.queryReport(bgId, "bg", pageindex + "");
 				try {
 					goodData.addAll(XmlUtil.parseReport(retData));
 					Message msg = new Message();
 					msg.arg1 = 12;
-					msg.arg2=XmlUtil.parseReport(retData).size();
+					msg.arg2 = XmlUtil.parseReport(retData).size();
 					goodHandler.sendMessage(msg);
 				} catch (Exception e) {
 					MyTools.showPushXml(getApplicationContext());
@@ -197,18 +205,20 @@ public class ReadReportGoodActivity extends ContainerActivity implements OnClick
 			break;
 		}
 	}
-	 private void imgLight(){
-	    	goodImg.setBackgroundResource(R.drawable.read_report_jp);
-	    	paihangImg.setBackgroundResource(R.drawable.read_report_ph1);
-	    	fenleiImg.setBackgroundResource(R.drawable.read_report_fl1);
-	    	mianfeiImg.setBackgroundResource(R.drawable.read_report_mf1);
-	    	//homeImg.setBackgroundResource(R.drawable.home1);
-	    	findImg.setBackgroundResource(R.drawable.read_report_find1);
-	    }
-	 @Override
-		protected void onResume() {
-			if (adapter != null)
-				adapter.notifyDataSetChanged();
-			super.onResume();
-		}
+
+	private void imgLight() {
+		goodImg.setBackgroundResource(R.drawable.read_report_jp);
+		paihangImg.setBackgroundResource(R.drawable.read_report_ph1);
+		fenleiImg.setBackgroundResource(R.drawable.read_report_fl1);
+		mianfeiImg.setBackgroundResource(R.drawable.read_report_mf1);
+		// homeImg.setBackgroundResource(R.drawable.home1);
+		findImg.setBackgroundResource(R.drawable.read_report_find1);
+	}
+
+	@Override
+	protected void onResume() {
+		if (adapter != null)
+			adapter.notifyDataSetChanged();
+		super.onResume();
+	}
 }

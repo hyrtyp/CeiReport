@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Cei.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/phone_study_topbg</item>
+    </style>
+
+    <style name="Theme.Cei.Sherlock" parent="Theme.Cei">
+        <item name="actionBarStyle">@style/Widget.Cei.ActionBar</item>
+    </style>
+    <style name="Theme.Cei" parent="Theme.Sherlock">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Cei.v" parent="Sherlock.__Theme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

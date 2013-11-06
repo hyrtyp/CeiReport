@@ -51,25 +51,26 @@ public class ReadReportFind extends ContainerActivity implements
 		@Override
 		public void handleMessage(Message msg) {
 			if (msg.what == 5) {
-				if(adapter!=null)
-				adapter.notifyDataSetChanged();
+				if (adapter != null)
+					adapter.notifyDataSetChanged();
 				// findImg.setEnabled(true);
 			} else if (msg.arg1 == 12) {
 				if (msg.arg2 < 20) {
 					moreText.setVisibility(View.GONE);
 				}
-				if(adapter!=null)
-				adapter.notifyDataSetChanged();
+				if (adapter != null)
+					adapter.notifyDataSetChanged();
 			} else {
-				if(findData==null)return;
+				if (findData == null)
+					return;
 				if (findData.size() == 0) {
-					MyTools.exitShow(ReadReportFind.this,ReadReportFind.this.
-							getWindow().getDecorView(),  "没有查到您需要的信息!");
-				} 
+					MyTools.exitShow(ReadReportFind.this, ReadReportFind.this
+							.getWindow().getDecorView(), "没有查到您需要的信息!");
+				}
 				adapter = new ReadReportAdapter(ReadReportFind.this, findData,
 						goodList);
 				goodList.setAdapter(adapter);
-				if(findData.size()<20)
+				if (findData.size() < 20)
 					moreText.setVisibility(View.GONE);
 			}
 		}
@@ -83,7 +84,7 @@ public class ReadReportFind extends ContainerActivity implements
 		setContentView(R.layout.read_report_find);
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		initView();
-//		imgLight();
+		// imgLight();
 		// initData();
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
@@ -93,15 +94,15 @@ public class ReadReportFind extends ContainerActivity implements
 	private void initView() {
 		findLine = (LinearLayout) findViewById(R.id.find_line);
 		findLine.setVisibility(View.VISIBLE);
-//		goodList = (ListView) findViewById(R.id.read_report_data_lv);
-//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-//		goodImg.setOnClickListener(this);
-//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-//		paihangImg.setOnClickListener(this);
-//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-//		fenleiImg.setOnClickListener(this);
-//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-//		mianfeiImg.setOnClickListener(this);
+		// goodList = (ListView) findViewById(R.id.read_report_data_lv);
+		// goodImg = (ImageView) findViewById(R.id.read_report_jp);
+		// goodImg.setOnClickListener(this);
+		// paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+		// paihangImg.setOnClickListener(this);
+		// fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+		// fenleiImg.setOnClickListener(this);
+		// mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+		// mianfeiImg.setOnClickListener(this);
 		/*
 		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
 		 * homeImg.setOnClickListener(this);
@@ -110,10 +111,11 @@ public class ReadReportFind extends ContainerActivity implements
 		iconImg.setText("搜索报告");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-//		findImg = (ImageView) findViewById(R.id.read_report_findreport);
-//		findImg.setOnClickListener(this);
+		// findImg = (ImageView) findViewById(R.id.read_report_findreport);
+		// findImg.setOnClickListener(this);
 		reportName = (EditText) findViewById(R.id.read_report_ettext);
-		SharedPreferences settings = getSharedPreferences("search_result",Activity.MODE_PRIVATE);
+		SharedPreferences settings = getSharedPreferences("search_result",
+				Activity.MODE_PRIVATE);
 		String historyStr = settings.getString("history_report", "");
 		reportName.setText(historyStr);
 		moreText = (TextView) findViewById(R.id.read_report_more);
@@ -128,7 +130,8 @@ public class ReadReportFind extends ContainerActivity implements
 				@Override
 				public void run() {
 					String sortBg = "";
-					ColumnEntry allColBg = columnEntry.getColByName(ReadReportMainActivity.MODEL_NAME);
+					ColumnEntry allColBg = columnEntry
+							.getColByName(ReadReportMainActivity.MODEL_NAME);
 					if (allColBg != null && allColBg.getId() != null
 							&& !allColBg.getId().equals("")) {
 						String allBgId = allColBg.getId();
@@ -139,13 +142,16 @@ public class ReadReportFind extends ContainerActivity implements
 							colIDs.append(columnEntry.getId() + ",");
 						}
 						if (colIDs != null && !colIDs.equals("")) {
-							if (reportName.getText().toString().trim().equals("")
+							if (reportName.getText().toString().trim()
+									.equals("")
 									|| reportName.getText().toString() == null) {
 								return;
 							}
-							SharedPreferences settings = getSharedPreferences("search_result",Activity.MODE_PRIVATE);
+							SharedPreferences settings = getSharedPreferences(
+									"search_result", Activity.MODE_PRIVATE);
 							Editor editor = settings.edit();
-							editor.putString("history_report", reportName.getText().toString());
+							editor.putString("history_report", reportName
+									.getText().toString());
 							editor.commit();
 							sortBg = Service.queryReportByName(
 									colIDs.toString().substring(0,
@@ -235,12 +241,14 @@ public class ReadReportFind extends ContainerActivity implements
 			 * 
 			 * }.start();
 			 */
-			/*pageindex=1;
-			reportData.clear();*/
+			/*
+			 * pageindex=1; reportData.clear();
+			 */
 			InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 			imm.hideSoftInputFromWindow(reportName.getWindowToken(), 0);
-			if(reportName.getText()!=null&&!reportName.getText().toString().trim().equals(""))
-			moreText.setVisibility(View.VISIBLE);
+			if (reportName.getText() != null
+					&& !reportName.getText().toString().trim().equals(""))
+				moreText.setVisibility(View.VISIBLE);
 			initData();
 			break;
 		case R.id.read_report_more:
@@ -265,7 +273,7 @@ public class ReadReportFind extends ContainerActivity implements
 							findData.addAll(XmlUtil.parseReport(newRetData));
 							Message msg = new Message();
 							msg.arg1 = 12;
-							msg.arg2=XmlUtil.parseReport(newRetData).size();
+							msg.arg2 = XmlUtil.parseReport(newRetData).size();
 							findHandler.sendMessage(msg);
 							return;
 						} catch (Exception e) {
@@ -288,7 +296,7 @@ public class ReadReportFind extends ContainerActivity implements
 		mianfeiImg.setBackgroundResource(R.drawable.read_report_mf1);
 		// homeImg.setBackgroundResource(R.drawable.home1);
 	}
-	
+
 	@Override
 	protected void onResume() {
 		if (adapter != null)
