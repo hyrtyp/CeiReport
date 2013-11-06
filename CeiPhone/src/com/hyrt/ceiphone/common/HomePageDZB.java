@@ -26,6 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.view.Window;
 import com.hyrt.cei.application.CeiApplication;
 import com.hyrt.cei.ui.common.LoginActivity;
 import com.hyrt.cei.ui.econdata.EconDataMain;
@@ -48,7 +49,7 @@ import com.hyrt.ceiphone.phonestudy.PhoneStudyActivity;
 import com.hyrt.ceiphone.phonestudy.PreloadActivity;
 import com.hyrt.readreport.ReadReportMainActivity;
 
-public class HomePageDZB extends ContainerActivity implements OnClickListener,
+public class HomePageDZB extends Activity implements OnClickListener,
 		OnItemClickListener {
 	// 首页背景
 	public RelativeLayout home_page_re;
@@ -77,6 +78,7 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_page_dzb);
 		/*new Handler().postDelayed(new Runnable() {
@@ -100,9 +102,6 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 				});
 			}
 		}, 200);*/
-		UpdateManager manager = new UpdateManager(HomePageDZB.this);
-		// 检查软件更新
-		manager.isUpdate();
 		findViewById(R.id.main_login).setOnClickListener(this);
 		textNum = (TextView) findViewById(R.id.home_page_main_num);
 		LinearLayout bottomsLl = (LinearLayout) findViewById(R.id.bottoms_Ll);
@@ -113,8 +112,13 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 		refreshListData();
 		showLoginBtnByUserName();
 		installMainGridView();
-//		startActivity(new Intent().setClass(this, ReadReportMainActivity.class));
-//		this.finish();
+		for(int i=0;i<columnEntries.size();i++){
+			if(columnEntries.get(i).getName().contains("报告")){
+				((CeiApplication)(getApplication())).nowStart=columnEntries.get(i).getName();
+			}
+		}
+		startActivity(new Intent().setClass(this, ReadReportMainActivity.class));
+		this.finish();
 		
 	}
 
@@ -188,7 +192,7 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 		columnEntries = new ArrayList<ColumnEntry>();
 		List<ColumnEntry> firstColumnEntries = columnEntry
 				.getEntryChildsForParent(null);
-		this.columnEntry.getWitSeaColumns().clear();
+		/*this.columnEntry.getWitSeaColumns().clear();
 		for (int i = 0; i < firstColumnEntries.size(); i++) {
 			boolean isModels = false;
 			ColumnEntry columnEntry = firstColumnEntries.get(i);
@@ -203,8 +207,8 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 				this.columnEntry.getWitSeaColumns().add(columnEntry);
 			}
 				
-		}
-		columnEntries.addAll(columnEntry.getSelectColumnEntryChilds());
+		}*/
+		columnEntries.addAll(firstColumnEntries);
 		GridView gridView = (GridView) findViewById(R.id.main_service_gridview);
 		GridViewAdapter gaAdapter = new GridViewAdapter(this,
 				R.layout.main_griview_item, columnEntries, gridView);
@@ -319,41 +323,32 @@ public class HomePageDZB extends ContainerActivity implements OnClickListener,
 		}).start();
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, 1, 1, "服务平台");
-		menu.add(0, 2, 2, "关于我们");
-		// TODO Auto-generated method stub
-		return super.onCreateOptionsMenu(menu);
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		menu.add(0, 1, 1, "服务平台");
+//		menu.add(0, 2, 2, "关于我们");
+//		// TODO Auto-generated method stub
+//		return super.onCreateOptionsMenu(menu);
+//	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
-		if (item.getItemId() == 1) {
-			intent = new Intent(HomePageDZB.this, WebViewUtil.class);
-			intent.putExtra("path", "http://mob.cei.gov.cn/");
-			startActivity(intent);
-		} else if (item.getItemId() == 2) {
-			intent = new Intent(this, Disclaimer.class);
-			//if (!loginName.equals("")) {
-			startActivity(intent);
-			//} else {
-				//Toast.makeText(this, "请登录后查看！", Toast.LENGTH_SHORT).show();
-			//}
-		}
-		return super.onOptionsItemSelected(item);
-	}
+//	@Override
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//		// TODO Auto-generated method stub
+//		if (item.getItemId() == 1) {
+//			intent = new Intent(HomePageDZB.this, WebViewUtil.class);
+//			intent.putExtra("path", "http://mob.cei.gov.cn/");
+//			startActivity(intent);
+//		} else if (item.getItemId() == 2) {
+//			intent = new Intent(this, Disclaimer.class);
+//			//if (!loginName.equals("")) {
+//			startActivity(intent);
+//			//} else {
+//				//Toast.makeText(this, "请登录后查看！", Toast.LENGTH_SHORT).show();
+//			//}
+//		}
+//		return super.onOptionsItemSelected(item);
+//	}
 
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		// TODO Auto-generated method stub
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			destroyActivities();
-			return true;
-		}
-		return super.onKeyDown(keyCode, event);
-	}
 	
 	private PopupWindow popWin;
 

@@ -17,11 +17,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.hyrt.cei.ui.witsea.WitSeaActivity;
 import com.hyrt.ceiphone.ContainerActivity;
 import com.hyrt.ceiphone.R;
+import com.hyrt.ceiphone.ContainerActivity.MenuFragmentIsLogin;
 import com.hyrt.ceiphone.common.Announcement;
 import com.hyrt.ceiphone.common.HomePageDZB;
+import com.hyrt.readreport.CeiShelfBookActivity;
 
 /**
  * 个人中心
@@ -29,17 +37,23 @@ import com.hyrt.ceiphone.common.HomePageDZB;
  * @author Administrator
  * 
  */
-public class PersonCenter extends FragmentActivity implements OnClickListener {
+public class PersonCenter extends SherlockFragmentActivity implements OnClickListener {
 	private Button person_info, qccount_info, change_password;
 	private RelativeLayout re;
 	private Intent intent;
-	private String loginName;
+	private static String loginName;
 
+	// 视图
 	private Fragment current;
 	private Fragment mContent;
 	private Fragment fragmentPersonInfo;
 	private Fragment fragmentQccountInfo;
 	private Fragment fragmentChangePassword;
+	// 菜单
+	public Fragment mFragmentmenu;
+	public FragmentManager fm;
+	public FragmentTransaction ft;
+	private static Intent intent_CeiShelfBookActivity = new Intent();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -67,13 +81,19 @@ public class PersonCenter extends FragmentActivity implements OnClickListener {
 		person_info = (Button) findViewById(R.id.person_info);
 		qccount_info = (Button) findViewById(R.id.qccount_info);
 		change_password = (Button) findViewById(R.id.change_password);
-
-		FragmentManager manager = getSupportFragmentManager();
-		FragmentTransaction fragmentTransaction = manager.beginTransaction();
-
-		mContent = current = fragmentPersonInfo = new PersonInfo();
-		fragmentTransaction.add(R.id.pc_re, fragmentPersonInfo);
-		fragmentTransaction.commit();
+		
+		intent_CeiShelfBookActivity.setClass(this, CeiShelfBookActivity.class);
+		
+		fm = getSupportFragmentManager();
+		ft = fm.beginTransaction();
+		// 菜单
+		mFragmentmenu = fm.findFragmentByTag("menu");
+		mFragmentmenu = new MenuFragmentIsLogin();
+		ft.add(mFragmentmenu, "menu");
+		//视图
+		mContent = fragmentPersonInfo = new PersonInfo();
+		ft.add(R.id.pc_re, fragmentPersonInfo);
+		ft.commit();
 
 		// SwitchActivity(0);
 	}
@@ -141,9 +161,9 @@ public class PersonCenter extends FragmentActivity implements OnClickListener {
 					R.drawable.grzx_2_1);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_1);
-//			SwitchActivity(0);
-			if(fragmentPersonInfo==null){
-				fragmentPersonInfo=new PersonInfo();
+			// SwitchActivity(0);
+			if (fragmentPersonInfo == null) {
+				fragmentPersonInfo = new PersonInfo();
 			}
 			switchContent(mContent, fragmentPersonInfo);
 			break;
@@ -154,11 +174,11 @@ public class PersonCenter extends FragmentActivity implements OnClickListener {
 					R.drawable.grzx_2_0);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_1);
-//			SwitchActivity(1);
-			if(fragmentQccountInfo==null){
-				fragmentQccountInfo=new QccountInfo();
+			// SwitchActivity(1);
+			if (fragmentQccountInfo == null) {
+				fragmentQccountInfo = new QccountInfo();
 			}
-			switchContent(mContent,fragmentQccountInfo);
+			switchContent(mContent, fragmentQccountInfo);
 			break;
 		case R.id.change_password:
 			findViewById(R.id.person_info).setBackgroundResource(
@@ -167,11 +187,11 @@ public class PersonCenter extends FragmentActivity implements OnClickListener {
 					R.drawable.grzx_2_1);
 			findViewById(R.id.change_password).setBackgroundResource(
 					R.drawable.grzx_3_0);
-//			SwitchActivity(2);
-			if(fragmentChangePassword==null){
-				fragmentChangePassword=new ChangePassword();
+			// SwitchActivity(2);
+			if (fragmentChangePassword == null) {
+				fragmentChangePassword = new ChangePassword();
 			}
-			switchContent(mContent,fragmentChangePassword);
+			switchContent(mContent, fragmentChangePassword);
 			break;
 		}
 	}
@@ -180,5 +200,28 @@ public class PersonCenter extends FragmentActivity implements OnClickListener {
 	protected void onDestroy() {
 		ContainerActivity.activities.remove(this);
 		super.onDestroy();
+	}
+
+	public static class MenuFragmentIsLogin extends SherlockFragment {
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setHasOptionsMenu(true);
+		}
+
+		@Override
+		public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+			menu.add(loginName)
+			.setShowAsAction(
+					MenuItem.SHOW_AS_ACTION_IF_ROOM
+							| MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			menu.add("书架")
+					.setIcon(R.drawable.read_report_bookshelf)
+					.setIntent(intent_CeiShelfBookActivity)
+					.setShowAsAction(
+							MenuItem.SHOW_AS_ACTION_IF_ROOM
+									| MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+		}
+
 	}
 }

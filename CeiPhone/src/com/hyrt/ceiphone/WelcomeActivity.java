@@ -24,6 +24,7 @@ import android.view.ViewTreeObserver.OnPreDrawListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.actionbarsherlock.view.Window;
 import com.hyrt.cei.application.CeiApplication;
 import com.hyrt.cei.util.MyTools;
 import com.hyrt.cei.util.WriteOrRead;
@@ -36,7 +37,7 @@ import com.hyrt.ceiphone.common.HomePageDZB;
 /**
  *
  */
-public class WelcomeActivity extends ContainerActivity {
+public class WelcomeActivity extends Activity {
 	private ImageView progressIv;
 	private AnimationDrawable animationDrawable;
 	// 是否进入离线模式
@@ -50,6 +51,7 @@ public class WelcomeActivity extends ContainerActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.welcome);
 		isGoUnline = false;

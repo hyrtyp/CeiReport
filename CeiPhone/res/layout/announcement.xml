@@ -10,7 +10,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/phone_study_topbg" >
+        android:background="@drawable/phone_study_topbg" 
+        android:visibility="gone">
 
         <TextView
             style="@style/yangshi_phone_title_big"

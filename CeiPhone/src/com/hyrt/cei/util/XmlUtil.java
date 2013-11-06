@@ -352,7 +352,7 @@ public class XmlUtil {
 					if (tag_name.equals("loginid")) {
 						columnEntry.setLoginid(someValue);
 					}
-					if (tag_name.equals("login")) {
+					if (tag_name.equals("logo")) {
 						columnEntry.setLogo(someValue);
 					}
 					if (tag_name.equals("background")) {
@@ -1504,18 +1504,12 @@ public class XmlUtil {
 					u = new Updata();
 				}
 				if (u != null) {
-					if (parser.getName().equals("aphoneversion")) {
+					if (parser.getName().equals("yepengaphoneversion")) {
 						u.setAphoneversion(Integer.parseInt(parser.nextText()));
-					} else if (parser.getName().equals("aphonename")) {
+					} else if (parser.getName().equals("yepengaphonename")) {
 						u.setAphonename(parser.nextText());
-					} else if (parser.getName().equals("aphoneurl")) {
+					} else if (parser.getName().equals("yepengaphoneurl")) {
 						u.setAphoneurl(parser.nextText());
-					}else if (parser.getName().equals("apadversion")) {
-						u.setApadversion(Integer.parseInt(parser.nextText()));
-					} else if (parser.getName().equals("apadname")) {
-						u.setApadname(parser.nextText());
-					}else if (parser.getName().equals("apadurl")) {
-						u.setApadurl(parser.nextText());
 					}
 				}
 				break;

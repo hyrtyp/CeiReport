@@ -11,7 +11,9 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/phone_study_topbg"
         android:paddingLeft="15.0dip"
-        android:paddingRight="15.0dip" >
+        android:paddingRight="15.0dip"
+        android:visibility="gone"
+        >
 
         <TextView
             android:id="@id/read_report_back"

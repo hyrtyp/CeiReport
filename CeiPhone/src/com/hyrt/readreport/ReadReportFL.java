@@ -61,12 +61,12 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 				adapter = new ReadReportAdapter(ReadReportFL.this, findData,
 						flList);
 				flList.setAdapter(adapter);
-				if(findData.size()<20)
+				if (findData.size() < 20)
 					moreText.setVisibility(View.GONE);
 			} else if (msg.what == 404) {
-				//Toast.makeText(ReadReportFL.this, "分类下没有数据!", 2).show();
-				MyTools.exitShow(ReadReportFL.this,ReadReportFL.this.
-						getWindow().getDecorView(),  "分类下没有数据！");
+				// Toast.makeText(ReadReportFL.this, "分类下没有数据!", 2).show();
+				MyTools.exitShow(ReadReportFL.this, ReadReportFL.this
+						.getWindow().getDecorView(), "分类下没有数据！");
 			} else if (msg.what == 3) {
 				if (msg.arg1 < 20) {
 					moreText.setVisibility(View.GONE);
@@ -77,12 +77,13 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 				click(rootElement, 1);
 				if (firstData.size() > 0) {
 					click(firstData.get(0), 2);
-					if(secondData.size()>0){
+					if (secondData.size() > 0) {
 						// 加载默认数据
 						nowId = secondData.get(0).getId();
 						if (((CeiApplication) getApplication()).isNet()) {
-							String reportData = Service.queryAllClassTypeReport(nowId,
-									pageindex + "");
+							String reportData = Service
+									.queryAllClassTypeReport(nowId, pageindex
+											+ "");
 							try {
 								findData = XmlUtil.parseReport(reportData);
 								// 保存数据库
@@ -96,11 +97,12 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 								e.printStackTrace();
 							}
 						}
-					}else if(!firstData.get(0).isMhasChild()){
+					} else if (!firstData.get(0).isMhasChild()) {
 						nowId = firstData.get(0).getId();
 						if (((CeiApplication) getApplication()).isNet()) {
-							String reportData = Service.queryAllClassTypeReport(nowId,
-									pageindex + "");
+							String reportData = Service
+									.queryAllClassTypeReport(nowId, pageindex
+											+ "");
 							try {
 								findData = XmlUtil.parseReport(reportData);
 								// 保存数据库
@@ -160,36 +162,29 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 							FlTableAdapter adapter = new FlTableAdapter(
 									ReadReportFL.this, secondData, -1);
 							flGridView2.setAdapter(adapter);
-							
+
 						}
 					}
 				});
-				flGridView2
-				.setOnItemClickListener(new OnItemClickListener() {
+				flGridView2.setOnItemClickListener(new OnItemClickListener() {
 
 					@Override
-					public void onItemClick(
-							AdapterView<?> arg0, View arg1,
+					public void onItemClick(AdapterView<?> arg0, View arg1,
 							int arg2, long arg3) {
 						findData.clear();
 						// 换点击item背景
-						for (int i = 0; i < arg0
-								.getChildCount(); i++) {
+						for (int i = 0; i < arg0.getChildCount(); i++) {
 							RelativeLayout rl = (RelativeLayout) arg0
 									.getChildAt(i);
 							if (i == arg2) {
-								((ImageView) (rl
-										.getChildAt(0)))
+								((ImageView) (rl.getChildAt(0)))
 										.setImageResource(R.drawable.phone_study_menu_select);
-								((TextView) rl
-										.getChildAt(1))
+								((TextView) rl.getChildAt(1))
 										.setTextColor(Color.WHITE);
 							} else {
-								((ImageView) (rl
-										.getChildAt(0)))
+								((ImageView) (rl.getChildAt(0)))
 										.setImageResource(R.drawable.menu_transbg);
-								((TextView) rl
-										.getChildAt(1))
+								((TextView) rl.getChildAt(1))
 										.setTextColor(Color.BLUE);
 							}
 						}
@@ -211,7 +206,7 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		dataHelper = ((CeiApplication) getApplication()).dataHelper;
 		initView();
-//		imgLight();
+		// imgLight();
 		initData();
 	}
 
@@ -221,14 +216,14 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		flTable.setVisibility(View.VISIBLE);
 		flGridView1 = (GGridView) findViewById(R.id.read_report_fl_gv);
 		flGridView2 = (GGridView) findViewById(R.id.read_report_fl_gv2);
-//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-//		goodImg.setOnClickListener(this);
-//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-//		paihangImg.setOnClickListener(this);
-//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-//		fenleiImg.setOnClickListener(this);
-//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-//		mianfeiImg.setOnClickListener(this);
+		// goodImg = (ImageView) findViewById(R.id.read_report_jp);
+		// goodImg.setOnClickListener(this);
+		// paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+		// paihangImg.setOnClickListener(this);
+		// fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+		// fenleiImg.setOnClickListener(this);
+		// mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+		// mianfeiImg.setOnClickListener(this);
 		/*
 		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
 		 * homeImg.setOnClickListener(this);
@@ -237,8 +232,8 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		iconImg.setText("报告分类");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-//		findImg = (ImageView) findViewById(R.id.read_report_find);
-//		findImg.setOnClickListener(this);
+		// findImg = (ImageView) findViewById(R.id.read_report_find);
+		// findImg.setOnClickListener(this);
 		moreText = (TextView) findViewById(R.id.read_report_more);
 		moreText.setOnClickListener(this);
 		backImg = (TextView) findViewById(R.id.ib_findbg_back);
@@ -250,7 +245,8 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 		secondData = new ArrayList<ReportpaitElement>();
 		findData = new ArrayList<Report>();
 		colIDs = new StringBuilder();
-		ColumnEntry allColBg = columnEntry.getColByName(ReadReportMainActivity.MODEL_NAME);
+		ColumnEntry allColBg = columnEntry
+				.getColByName(ReadReportMainActivity.MODEL_NAME);
 		if (allColBg != null) {
 			String allBgId = allColBg.getId();
 			if (allBgId != null) {
@@ -354,7 +350,7 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 						pageindex + "");
 				try {
 					List<Report> reports = XmlUtil.parseReport(reportData);
-					if(reports!=null){
+					if (reports != null) {
 						findData.addAll(reports);
 					}
 					// 保存数据库

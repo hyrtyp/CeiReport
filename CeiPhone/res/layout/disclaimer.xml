@@ -10,8 +10,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/phone_study_topbg" >
-
+        android:background="@drawable/phone_study_topbg" 
+        android:visibility="gone">
         <TextView
             style="@style/yangshi_phone_title_big"
             android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
     <LinearLayout
         android:id="@id/select"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@id/top"
         android:background="#ff3c71ba"
         android:paddingLeft="15.0dip"

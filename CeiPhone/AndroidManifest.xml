@@ -1,81 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest android:versionCode="14" android:versionName="14.0" 
-  package="com.hyrt.ceiphone"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.hyrt.cei.application.CeiApplication" android:hardwareAccelerated="true">
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name=".WelcomeActivity" android:screenOrientation="portrait">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyrt.ceiphone"
+    android:versionCode="14"
+    android:versionName="14.0" >
+
+    <application
+        android:name="com.hyrt.cei.application.CeiApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:theme="@style/Theme.Cei.Sherlock">
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.common.HomePageDZB" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationReadActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationOne" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationTwo" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationThree" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationCollect" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InformationActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.information.InfoSearchActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.common.Disclaimer" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.common.WebViewUtil" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="locale|keyboard|keyboardHidden|orientation" android:alwaysRetainTaskState="true" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.personcenter.PersonCenter" android:screenOrientation="portrait" android:alwaysRetainTaskState="true" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.personcenter.PersonInfo" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.personcenter.QccountInfo" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.personcenter.ChangePassword" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.common.Announcement" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.common.AnnouncementRead" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportMainActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportGoodActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReportIntro" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportFind" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportFL" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportPH" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.ReadReportMF" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.readreport.CeiShelfBookActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="org.vudroid.pdfdroid.PdfViewerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+        <activity
+            android:name="com.hyrt.ceiphone.common.HomePageDZB"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationReadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationOne"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationTwo"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationThree"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationCollect"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.information.InfoSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.common.Disclaimer"
+            android:screenOrientation="portrait"
+            android:label="关于我们"/>
+        <activity
+            android:name="com.hyrt.ceiphone.common.WebViewUtil"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.personcenter.PersonCenter"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:label="个人中心"
+            />
+        <activity
+            android:name="com.hyrt.cei.ui.personcenter.PersonInfo"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.personcenter.QccountInfo"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.personcenter.ChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.common.Announcement"
+            android:screenOrientation="portrait"
+            android:label="通知公告"
+            />
+        <activity
+            android:name="com.hyrt.ceiphone.common.AnnouncementRead"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportMainActivity"
+            android:screenOrientation="portrait"
+            android:label="研究报告"
+             />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportGoodActivity"
+            android:screenOrientation="portrait"
+            android:label="精品推荐"
+            />
+        <activity
+            android:name="com.hyrt.readreport.ReportIntro"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportFind"
+            android:screenOrientation="portrait"
+            android:label="搜索报告"
+            />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportFL"
+            android:screenOrientation="portrait"
+            android:label="分类浏览"
+            />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportPH"
+            android:screenOrientation="portrait"
+            android:label="阅读排行"
+            />
+        <activity
+            android:name="com.hyrt.readreport.ReadReportMF"
+            android:screenOrientation="portrait"
+            android:label="免费报告"
+            />
+        <activity
+            android:name="com.hyrt.readreport.CeiShelfBookActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="org.vudroid.pdfdroid.PdfViewerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:mimeType="application/pdf" android:path="aaa" />
+
+                <data
+                    android:mimeType="application/pdf"
+                    android:path="aaa" />
             </intent-filter>
         </activity>
-        <activity android:label="PDF阅读器" android:name="com.poqop.document.MainBrowserActivity">
+        <activity
+            android:name="com.poqop.document.MainBrowserActivity"
+            android:label="PDF阅读器" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.LoginActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.GetpasswordActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.CourseDetailActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.SinaDemoActivity" android:screenOrientation="landscape" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.phonestudy.PreloadActivity" android:screenOrientation="landscape" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.FreeActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.SearchActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.PreloadActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.NominateActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.KindsActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.SelfActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.SayActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.SayGroupActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.PhoneStudyActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.ceiphone.phonestudy.StudyRecordActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.witsea.WitSeaActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.common.RegistActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDataMain" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDataContent" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDataSearchActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconDateNumberActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconFXDataActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconZBQueryActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.hyrt.cei.ui.econdata.EconZZDataActivity" android:screenOrientation="portrait" />
-        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.APITypeListActivity" />
-        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.ShareActivity" />
-        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.BlogFunActivity" />
-        <activity android:theme="@*android:style/Theme.Light" android:name="com.weibo.sdk.android.demo.MainActivity" />
+        <activity
+            android:name="com.hyrt.cei.ui.common.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.common.GetpasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.phonestudy.CourseDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.phonestudy.SinaDemoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.phonestudy.PreloadActivity"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.FreeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.PreloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.NominateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.KindsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.SelfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.SayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.SayGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.PhoneStudyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.ceiphone.phonestudy.StudyRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.witsea.WitSeaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.common.RegistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconDataMain"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconDataContent"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconDataSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconDateNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconFXDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconZBQueryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hyrt.cei.ui.econdata.EconZZDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.weibo.sdk.android.demo.APITypeListActivity"
+            android:theme="@*android:style/Theme.Light" />
+        <activity
+            android:name="com.weibo.sdk.android.demo.ShareActivity"
+            android:theme="@*android:style/Theme.Light" />
+        <activity
+            android:name="com.weibo.sdk.android.demo.BlogFunActivity"
+            android:theme="@*android:style/Theme.Light" />
+        <activity
+            android:name="com.weibo.sdk.android.demo.MainActivity"
+            android:theme="@*android:style/Theme.Light" />
     </application>
+
     <uses-permission android:name="READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -94,6 +282,13 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-sdk android:minSdkVersion="3"/>
-    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+
+    <uses-sdk android:minSdkVersion="3" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
 </manifest>

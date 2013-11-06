@@ -34,23 +34,23 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 	private List<Report> MFData;
 	private StringBuilder colIDs = null;
 	private int pageindex = 1;
-	private TextView moreText, iconImg,backImg;
-	private ReadReportAdapter adapter ;
+	private TextView moreText, iconImg, backImg;
+	private ReadReportAdapter adapter;
 	private Handler mfHandler = new Handler() {
 
 		@Override
 		public void handleMessage(Message msg) {
 			if (msg.arg1 == 12) {
-				if(msg.arg2<20){
+				if (msg.arg2 < 20) {
 					moreText.setVisibility(View.GONE);
 				}
-				if(adapter!=null)
-				adapter.notifyDataSetChanged();
+				if (adapter != null)
+					adapter.notifyDataSetChanged();
 			} else {
-				adapter = new ReadReportAdapter(
-						ReadReportMF.this, MFData, MFList);
+				adapter = new ReadReportAdapter(ReadReportMF.this, MFData,
+						MFList);
 				MFList.setAdapter(adapter);
-				if(MFData.size()<20)
+				if (MFData.size() < 20)
 					moreText.setVisibility(View.GONE);
 			}
 		}
@@ -64,21 +64,21 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 		setContentView(R.layout.read_report_find);
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		initView();
-//		imgLight();
+		// imgLight();
 		initData();
 	}
 
 	private void initView() {
 
 		MFList = (ListView) findViewById(R.id.read_report_data_lv);
-//		goodImg = (ImageView) findViewById(R.id.read_report_jp);
-//		goodImg.setOnClickListener(this);
-//		paihangImg = (ImageView) findViewById(R.id.read_report_ph);
-//		paihangImg.setOnClickListener(this);
-//		fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
-//		fenleiImg.setOnClickListener(this);
-//		mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
-//		mianfeiImg.setOnClickListener(this);
+		// goodImg = (ImageView) findViewById(R.id.read_report_jp);
+		// goodImg.setOnClickListener(this);
+		// paihangImg = (ImageView) findViewById(R.id.read_report_ph);
+		// paihangImg.setOnClickListener(this);
+		// fenleiImg = (ImageView) findViewById(R.id.read_report_fl);
+		// fenleiImg.setOnClickListener(this);
+		// mianfeiImg = (ImageView) findViewById(R.id.read_report_mf);
+		// mianfeiImg.setOnClickListener(this);
 		/*
 		 * homeImg = (ImageView) findViewById(R.id.read_report_home);
 		 * homeImg.setOnClickListener(this);
@@ -87,11 +87,11 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 		iconImg.setText("免费报告");
 		bookself = (ImageView) findViewById(R.id.ib_findbg_bookshelf);
 		bookself.setOnClickListener(this);
-//		findImg = (ImageView) findViewById(R.id.read_report_find);
-//		findImg.setOnClickListener(this);
+		// findImg = (ImageView) findViewById(R.id.read_report_find);
+		// findImg.setOnClickListener(this);
 		moreText = (TextView) findViewById(R.id.read_report_more);
 		moreText.setOnClickListener(this);
-		backImg=(TextView) findViewById(R.id.ib_findbg_back);
+		backImg = (TextView) findViewById(R.id.ib_findbg_back);
 		backImg.setOnClickListener(this);
 	}
 
@@ -102,7 +102,8 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 				@Override
 				public void run() {
 					String sortBg = "";
-					ColumnEntry allColBg = columnEntry.getColByName(ReadReportMainActivity.MODEL_NAME);
+					ColumnEntry allColBg = columnEntry
+							.getColByName(ReadReportMainActivity.MODEL_NAME);
 					if (allColBg != null && allColBg.getId() != null
 							&& !allColBg.getId().equals("")) {
 						String allBgId = allColBg.getId();
@@ -170,10 +171,10 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 			break;
 		case R.id.read_report_mf:
 			break;
-//		case R.id.read_report_home:
-//			intent = new Intent(this, HomePageDZB.class);
-//			startActivity(intent);
-//			break;
+		// case R.id.read_report_home:
+		// intent = new Intent(this, HomePageDZB.class);
+		// startActivity(intent);
+		// break;
 		case R.id.ib_findbg_bookshelf:
 			intent = new Intent(this, CeiShelfBookActivity.class);
 			startActivity(intent);
@@ -194,13 +195,13 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 					pageindex++;
 					String newRetData = Service.queryAllFreeReport(
 							colIDs.toString().substring(0,
-									colIDs.toString().length() - 1),
-							pageindex + "", "");
+									colIDs.toString().length() - 1), pageindex
+									+ "", "");
 					// reportData.clear();
 					MFData.addAll(XmlUtil.parseReport(newRetData));
 					Message msg = new Message();
 					msg.arg1 = 12;
-					msg.arg2=XmlUtil.parseReport(newRetData).size();
+					msg.arg2 = XmlUtil.parseReport(newRetData).size();
 					mfHandler.sendMessage(msg);
 					return;
 				} catch (Exception e) {
@@ -220,6 +221,7 @@ public class ReadReportMF extends ContainerActivity implements OnClickListener {
 		// homeImg.setBackgroundResource(R.drawable.home1);
 		findImg.setBackgroundResource(R.drawable.read_report_find1);
 	}
+
 	@Override
 	protected void onResume() {
 		if (adapter != null)
