@@ -21,7 +21,7 @@ import android.widget.Toast;
  * 登录界面
  * 
  */
-public class LoginActivity extends ContainerActivity {
+public class LoginActivity extends Activity {
 	private int i1, i2;
 	private EditText accountEt;
 	private EditText passwordEt;
@@ -36,6 +36,7 @@ public class LoginActivity extends ContainerActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ui_login);
 		getWindow().setSoftInputMode(

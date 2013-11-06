@@ -18,7 +18,7 @@ import com.hyrt.ceiphone.ContainerActivity;
 import com.hyrt.ceiphone.R;
 import com.hyrt.ceiphone.common.HomePageDZB;
 
-public class GetpasswordActivity extends ContainerActivity{
+public class GetpasswordActivity extends Activity{
 	private int i1, i2;
 	private ExecutorService executorService = Executors.newFixedThreadPool(1);
 	private EditText username, email;
@@ -30,6 +30,7 @@ public class GetpasswordActivity extends ContainerActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ui_getpassword);
 		InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);

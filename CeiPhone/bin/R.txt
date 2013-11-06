@@ -1407,7 +1407,8 @@ int style Theme_Sherlock_Light_NoActionBar 0x7f090061
 int style Theme_Sherlock_NoActionBar 0x7f090060
 int style Widget 0x7f090009
 int style Widget_Cei_ActionBar 0x7f090062
-int style Widget_Cei_ActionBar_Title 0x7f090064
+int style Widget_Cei_ActionBar_Title 0x7f090065
+int style Widget_Cei_ActionBar_Title_v 0x7f090068
 int style Widget_Sherlock_ActionBar 0x7f09000b
 int style Widget_Sherlock_ActionBar_Solid 0x7f09000c
 int style Widget_Sherlock_ActionBar_TabBar 0x7f090013
@@ -1460,7 +1461,7 @@ int style yangshi_3 0x7f090002
 int style yangshi_4 0x7f090003
 int style yangshi_5 0x7f090004
 int style yangshi_pad_title 0x7f090005
-int style yangshi_phone_bottom_menu 0x7f090065
+int style yangshi_phone_bottom_menu 0x7f090064
 int style yangshi_phone_title_big 0x7f090006
 int style yangshi_phone_title_small 0x7f090007
 int[] styleable SherlockActionBar { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c, 0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055 }

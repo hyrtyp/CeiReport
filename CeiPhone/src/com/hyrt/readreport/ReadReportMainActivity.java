@@ -166,7 +166,11 @@ public class ReadReportMainActivity extends ContainerActivity implements
 		
 		MODEL_NAME = ((CeiApplication) getApplication()).nowStart;// 获取当前业务名称。
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
-		bbStart=columnEntry.getColumnEntryChilds().get(0).getName().equals("通用版")?true:false;
+		try {
+			bbStart=columnEntry.getColumnEntryChilds().get(0).getName().equals("通用版")?true:false;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		application = (CeiApplication) getApplication();
 		initView();
 		initData();

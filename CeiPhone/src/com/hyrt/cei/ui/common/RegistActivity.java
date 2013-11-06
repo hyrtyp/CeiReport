@@ -33,7 +33,7 @@ import android.widget.Toast;
  * 注册界面
  * 
  */
-public class RegistActivity extends ContainerActivity {
+public class RegistActivity extends Activity {
 	private int i1, i2, i3, i4, i5, i6, i7, i8;
 	private final static int REPEAT_USER = 1;
 	private final static int SAVE_USER = 2;
@@ -55,7 +55,7 @@ public class RegistActivity extends ContainerActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ui_regist);
 		getWindow().setSoftInputMode(

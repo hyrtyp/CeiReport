@@ -19,6 +19,8 @@ import com.hyrt.cei.vo.funId;
 import com.hyrt.ceiphone.ContainerActivity;
 import com.hyrt.ceiphone.R;
 import com.poqop.document.ViewerPreferences;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.hardware.Camera;
@@ -32,7 +34,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ReportIntro extends ContainerActivity {
+public class ReportIntro extends Activity {
 	private TextView textJianj, textMul;
 	private TextView zhuz, price, zhuzbq, pricebq, intorbq, time, title;
 	private ImageView reportImg, backImg;
@@ -63,6 +65,7 @@ public class ReportIntro extends ContainerActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
+		requestWindowFeature(0x1);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.read_report_intro);
 		Intent intent = getIntent();

@@ -104,7 +104,7 @@
         <activity
             android:name="com.hyrt.readreport.ReportIntro"
             android:screenOrientation="portrait"
-            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="com.hyrt.readreport.ReadReportFind"
             android:screenOrientation="portrait"
@@ -157,11 +157,11 @@
         <activity
             android:name="com.hyrt.cei.ui.common.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="com.hyrt.cei.ui.common.GetpasswordActivity"
             android:screenOrientation="portrait"
-            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="com.hyrt.cei.ui.phonestudy.CourseDetailActivity"
             android:screenOrientation="portrait"
@@ -221,7 +221,7 @@
         <activity
             android:name="com.hyrt.cei.ui.common.RegistActivity"
             android:screenOrientation="portrait"
-            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="com.hyrt.cei.ui.econdata.EconDataMain"
             android:screenOrientation="portrait"
