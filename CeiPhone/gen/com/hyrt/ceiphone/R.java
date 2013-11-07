@@ -2102,8 +2102,14 @@ containing a value of this type.
         public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large=0x7f090049;
         public static final int TextAppearance_Sherlock_Widget_PopupMenu_Small=0x7f09004b;
         public static final int TextAppearance_Sherlock_Widget_TextView_SpinnerItem=0x7f09004d;
+        /**  v11 以下 
+         */
         public static final int Theme_Cei=0x7f090066;
+        /**  v11 以下 
+         */
         public static final int Theme_Cei_Sherlock=0x7f090063;
+        /**  v11  v14 
+         */
         public static final int Theme_Cei_v=0x7f090067;
         public static final int Theme_Sherlock=0x7f09005d;
         public static final int Theme_Sherlock_Light=0x7f09005e;
@@ -2111,8 +2117,14 @@ containing a value of this type.
         public static final int Theme_Sherlock_Light_NoActionBar=0x7f090061;
         public static final int Theme_Sherlock_NoActionBar=0x7f090060;
         public static final int Widget=0x7f090009;
+        /**  v11 以下 
+         */
         public static final int Widget_Cei_ActionBar=0x7f090062;
+        /**  v11 以下 
+         */
         public static final int Widget_Cei_ActionBar_Title=0x7f090065;
+        /**  v11  v14 
+         */
         public static final int Widget_Cei_ActionBar_Title_v=0x7f090068;
         public static final int Widget_Sherlock_ActionBar=0x7f09000b;
         public static final int Widget_Sherlock_ActionBar_Solid=0x7f09000c;

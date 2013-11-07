@@ -37,7 +37,7 @@ import com.hyrt.readreport.CeiShelfBookActivity;
  * @author Administrator
  * 
  */
-public class PersonCenter extends SherlockFragmentActivity implements OnClickListener {
+public class PersonCenter extends ContainerActivity implements OnClickListener {
 	private Button person_info, qccount_info, change_password;
 	private RelativeLayout re;
 	private Intent intent;
