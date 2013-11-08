@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal"
+    android:paddingTop="10.0dip"
+    android:weightSum="9.0" >
+
+    <RelativeLayout
+        android:id="@id/iv_report_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_jp1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_yd1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_partition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_fl1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_miamfei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_mf1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/yjbg_but_ss1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_tzgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/econ_data_home1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_grzx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/econ_data_home1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/iv_report_gywm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/econ_data_home1" />
+    </RelativeLayout>
+
+</LinearLayout>

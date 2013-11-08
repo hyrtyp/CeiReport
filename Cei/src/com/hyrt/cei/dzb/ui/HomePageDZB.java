@@ -83,7 +83,9 @@ public class HomePageDZB extends Activity implements OnClickListener,
 	public static final String[] MODELS = { "移动学习", "政经资讯", "经济数据", "研究报告" };
 	// 首页背景
 	public RelativeLayout home_page_re;
-
+	//一级业务
+	private List<ColumnEntry> firstColumnEntries;
+	
 	@Override
 	protected void onDestroy() {
 		HomePageDZB.commonActivities.remove(this);
@@ -178,7 +180,14 @@ public class HomePageDZB extends Activity implements OnClickListener,
 				initRLRView();
 			}
 		}, 2000);
-
+		
+		for(int i=0;i<firstColumnEntries.size();i++){
+			if(firstColumnEntries.get(i).getName().contains("报告")){
+				((CeiApplication)(getApplication())).nowStart=firstColumnEntries.get(i).getName();
+			}
+		}
+		startActivity(new Intent().setClass(this, ReadReportActivity.class));
+		this.finish();
 	}
 
 	@Override
@@ -216,7 +225,7 @@ public class HomePageDZB extends Activity implements OnClickListener,
 		rightImageView[2] = (ImageView) findViewById(R.id.homepage_right_botton);
 		columnEntry = ((CeiApplication) getApplication()).columnEntry;
 		columnEnties = new ArrayList<ColumnEntry>();
-		List<ColumnEntry> firstColumnEntries = columnEntry
+		firstColumnEntries = columnEntry
 				.getEntryChildsForParent(null);
 		this.columnEntry.getWitSeaColumns().clear();
 		for (int i = 0; i < firstColumnEntries.size(); i++) {

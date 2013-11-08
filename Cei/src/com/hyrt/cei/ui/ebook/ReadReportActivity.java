@@ -45,7 +45,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ReadReportActivity extends Activity implements OnClickListener,
+public class ReadReportActivity extends BaseActivity implements OnClickListener,
 		OnItemClickListener {
 	// public static List<Class> activitys;
 	public static boolean bbStart;
@@ -294,20 +294,20 @@ public class ReadReportActivity extends Activity implements OnClickListener,
 		moreReport = (Button) findViewById(R.id.yjbg_more_report);
 		moreReport.setOnClickListener(this);
 		book_gv = (GridView) findViewById(R.id.yjbg_gv_book);
-		homePage = (ImageView) findViewById(R.id.iv_report_page_home);
-		homePage.setOnClickListener(this);
-		homeReport = (ImageView) findViewById(R.id.iv_report_home);
-		homeReport.setOnClickListener(this);
-		goodsView = (ImageView) findViewById(R.id.iv_report_goods);
-		goodsView.setOnClickListener(this);
-		sortView = (ImageView) findViewById(R.id.iv_report_sort);
-		sortView.setOnClickListener(this);
-		partView = (ImageView) findViewById(R.id.iv_report_partition);
-		partView.setOnClickListener(this);
-		mianfeiReport = (ImageView) findViewById(R.id.iv_report_miamfei);
-		mianfeiReport.setOnClickListener(this);
-		findReport = (ImageView) findViewById(R.id.iv_report_find);
-		findReport.setOnClickListener(this);
+//		homePage = (ImageView) findViewById(R.id.iv_report_page_home);
+//		homePage.setOnClickListener(this);
+//		homeReport = (ImageView) findViewById(R.id.iv_report_home);
+//		homeReport.setOnClickListener(this);
+//		goodsView = (ImageView) findViewById(R.id.iv_report_goods);
+//		goodsView.setOnClickListener(this);
+//		sortView = (ImageView) findViewById(R.id.iv_report_sort);
+//		sortView.setOnClickListener(this);
+//		partView = (ImageView) findViewById(R.id.iv_report_partition);
+//		partView.setOnClickListener(this);
+//		mianfeiReport = (ImageView) findViewById(R.id.iv_report_miamfei);
+//		mianfeiReport.setOnClickListener(this);
+//		findReport = (ImageView) findViewById(R.id.iv_report_find);
+//		findReport.setOnClickListener(this);
 		bookSelf = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_bookshelf));
 		bookSelf.setOnClickListener(this);
 		back = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_back));

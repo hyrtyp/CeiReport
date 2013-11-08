@@ -29,7 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class GoodsReportActivity extends Activity implements OnClickListener {
+public class GoodsReportActivity extends BaseActivity implements OnClickListener {
 	private ImageView homePage, homeReport, goodsView, sortView, partView,
 			mianfeiReport, findReport;
 	private ImageButton back, bookSelf;
@@ -154,20 +154,20 @@ public class GoodsReportActivity extends Activity implements OnClickListener {
 		prolayout = (LinearLayout) findViewById(R.id.report_jingp_pro);
 		goodList = (ListView) findViewById(R.id.yjbg_goodreport_list);
 
-		homePage = (ImageView) findViewById(R.id.iv_good_report_page_home);
-		homePage.setOnClickListener(this);
-		homeReport = (ImageView) findViewById(R.id.iv_good_report_home);
-		homeReport.setOnClickListener(this);
-		goodsView = (ImageView) findViewById(R.id.iv_good_report_goods);
-		goodsView.setOnClickListener(this);
-		sortView = (ImageView) findViewById(R.id.iv_good_report_sort);
-		sortView.setOnClickListener(this);
-		partView = (ImageView) findViewById(R.id.iv_good_report_partition);
-		partView.setOnClickListener(this);
-		mianfeiReport = (ImageView) findViewById(R.id.iv_good_report_miamfei);
-		mianfeiReport.setOnClickListener(this);
-		findReport = (ImageView) findViewById(R.id.iv_good_report_find);
-		findReport.setOnClickListener(this);
+//		homePage = (ImageView) findViewById(R.id.iv_good_report_page_home);
+//		homePage.setOnClickListener(this);
+//		homeReport = (ImageView) findViewById(R.id.iv_good_report_home);
+//		homeReport.setOnClickListener(this);
+//		goodsView = (ImageView) findViewById(R.id.iv_good_report_goods);
+//		goodsView.setOnClickListener(this);
+//		sortView = (ImageView) findViewById(R.id.iv_good_report_sort);
+//		sortView.setOnClickListener(this);
+//		partView = (ImageView) findViewById(R.id.iv_good_report_partition);
+//		partView.setOnClickListener(this);
+//		mianfeiReport = (ImageView) findViewById(R.id.iv_good_report_miamfei);
+//		mianfeiReport.setOnClickListener(this);
+//		findReport = (ImageView) findViewById(R.id.iv_good_report_find);
+//		findReport.setOnClickListener(this);
 		bookSelf = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_bookshelf));
 		bookSelf.setOnClickListener(this);
 		back = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_back));

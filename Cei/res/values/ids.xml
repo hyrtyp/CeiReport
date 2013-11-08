@@ -619,6 +619,9 @@
     <item type="id" name="iv_report_partition">false</item>
     <item type="id" name="iv_report_miamfei">false</item>
     <item type="id" name="iv_report_find">false</item>
+    <item type="id" name="iv_report_tzgg">false</item>
+    <item type="id" name="iv_report_grzx">false</item>
+    <item type="id" name="iv_report_gywm">false</item>
     <item type="id" name="yjbg_gv_book">false</item>
     <item type="id" name="yjbg_more_report">false</item>
     <item type="id" name="yjbg_read_pro">false</item>

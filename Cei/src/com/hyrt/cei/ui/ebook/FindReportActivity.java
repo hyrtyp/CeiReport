@@ -37,7 +37,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class FindReportActivity extends Activity implements OnClickListener {
+public class FindReportActivity extends BaseActivity implements OnClickListener {
 	private ImageView homePage, homeReport, goodsView, sortView, partView,
 			mianfeiReport, reportFind;
 	private EditText reportName;

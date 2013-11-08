@@ -34,7 +34,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PartitionReportActivity extends Activity implements
+public class PartitionReportActivity extends BaseActivity implements
 		OnClickListener {
 	public static List<TextView> friFenL = new ArrayList<TextView>(),
 			secFenL = new ArrayList<TextView>(),
@@ -295,20 +295,20 @@ public class PartitionReportActivity extends Activity implements
 		title.setText("分类报告");
 		more = (TextView) findViewById(R.id.more);
 		more.setOnClickListener(this);
-		homePage = (ImageView) findViewById(R.id.iv_fenlei_report_page_home);
-		homePage.setOnClickListener(this);
-		homeReport = (ImageView) findViewById(R.id.iv_fenlei_report_home);
-		homeReport.setOnClickListener(this);
-		goodsView = (ImageView) findViewById(R.id.iv_fenlei_report_goods);
-		goodsView.setOnClickListener(this);
-		sortView = (ImageView) findViewById(R.id.iv_fenlei_report_sort);
-		sortView.setOnClickListener(this);
-		partView = (ImageView) findViewById(R.id.iv_fenlei_report_partition);
-		partView.setOnClickListener(this);
-		mianfeiReport = (ImageView) findViewById(R.id.iv_fenlei_report_miamfei);
-		mianfeiReport.setOnClickListener(this);
-		findReport = (ImageView) findViewById(R.id.iv_fenlei_report_find);
-		findReport.setOnClickListener(this);
+//		homePage = (ImageView) findViewById(R.id.iv_fenlei_report_page_home);
+//		homePage.setOnClickListener(this);
+//		homeReport = (ImageView) findViewById(R.id.iv_fenlei_report_home);
+//		homeReport.setOnClickListener(this);
+//		goodsView = (ImageView) findViewById(R.id.iv_fenlei_report_goods);
+//		goodsView.setOnClickListener(this);
+//		sortView = (ImageView) findViewById(R.id.iv_fenlei_report_sort);
+//		sortView.setOnClickListener(this);
+//		partView = (ImageView) findViewById(R.id.iv_fenlei_report_partition);
+//		partView.setOnClickListener(this);
+//		mianfeiReport = (ImageView) findViewById(R.id.iv_fenlei_report_miamfei);
+//		mianfeiReport.setOnClickListener(this);
+//		findReport = (ImageView) findViewById(R.id.iv_fenlei_report_find);
+//		findReport.setOnClickListener(this);
 		bookSelf = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_bookshelf));
 		bookSelf.setOnClickListener(this);
 		back = (ImageButton) (findViewById(R.id.top).findViewById(R.id.ib_bg_back));

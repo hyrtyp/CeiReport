@@ -25,6 +25,7 @@ import com.hyrt.cei.R;
 import com.hyrt.cei.adapter.AnnouncementListAdapter;
 import com.hyrt.cei.application.CeiApplication;
 import com.hyrt.cei.ui.common.WebViewUtil;
+import com.hyrt.cei.ui.ebook.BaseActivity;
 import com.hyrt.cei.ui.personcenter.PersonCenter;
 import com.hyrt.cei.ui.witsea.WitSeaActivity;
 import com.hyrt.cei.util.MyTools;
@@ -39,7 +40,7 @@ import com.hyrt.cei.webservice.service.Service;
  * @author Administrator
  * 
  */
-public class Announcement extends Activity implements OnClickListener {
+public class Announcement extends BaseActivity implements OnClickListener {
 	private ExecutorService executorService = Executors.newFixedThreadPool(1);
 	private String htmlHade = MyTools.noticeHtml;
 	private ListView list;
@@ -77,11 +78,11 @@ public class Announcement extends Activity implements OnClickListener {
 	}
 
 	public void init() {
-		findViewById(R.id.home).setOnClickListener(this);
-		findViewById(R.id.home_witsea).setOnClickListener(this);
-		findViewById(R.id.home_ceinet).setOnClickListener(this);
-		findViewById(R.id.home_personcenter).setOnClickListener(this);
-		findViewById(R.id.home_disclaimer).setOnClickListener(this);
+//		findViewById(R.id.home).setOnClickListener(this);
+//		findViewById(R.id.home_witsea).setOnClickListener(this);
+//		findViewById(R.id.home_ceinet).setOnClickListener(this);
+//		findViewById(R.id.home_personcenter).setOnClickListener(this);
+//		findViewById(R.id.home_disclaimer).setOnClickListener(this);
 		list = (ListView) findViewById(R.id.tzgg_list);
 		refreshListData();
 		list.setOnItemClickListener(new OnItemClickListener() {

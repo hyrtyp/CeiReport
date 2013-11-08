@@ -16,6 +16,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
@@ -24,7 +28,7 @@ import android.widget.TextView;
  * @author Administrator
  * 
  */
-public class PersonInfo extends Activity {
+public class PersonInfo extends Fragment {
 	private ExecutorService executorService = Executors.newFixedThreadPool(1);
 	public static PersonCenterInf p;
 	private TextView lgoinname, name, sex, certype, cardno, phone, email,
@@ -36,25 +40,28 @@ public class PersonInfo extends Activity {
 		return p;
 	}
 
-	protected void onCreate(Bundle savedInstanceState) {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.personinfo);
-		overridePendingTransition(R.anim.push_in, R.anim.push_out);
-		columnEntry = ((CeiApplication) getApplication()).columnEntry;
+//		setContentView(R.layout.personinfo);
+//		overridePendingTransition(R.anim.push_in, R.anim.push_out);
+		View view = inflater.inflate(R.layout.personinfo,container, false);
+		columnEntry = ((CeiApplication) getActivity().getApplication()).columnEntry;
 		userId = columnEntry.getUserId();
-		init();
+		init(view);
+		return view;
 	}
 
-	private void init() {
-		lgoinname = (TextView) findViewById(R.id.personinfo_loginname);
-		name = (TextView) findViewById(R.id.personinfo_name);
-		sex = (TextView) findViewById(R.id.personinfo_sex);
-		certype = (TextView) findViewById(R.id.personinfo_zhengjian);
-		cardno = (TextView) findViewById(R.id.personinfo_zhengjiannum);
-		phone = (TextView) findViewById(R.id.personinfo_phonenum);
-		email = (TextView) findViewById(R.id.personinfo_email);
-		unitname = (TextView) findViewById(R.id.personinfo_danwei);
+	private void init(View view) {
+		lgoinname = (TextView) view.findViewById(R.id.personinfo_loginname);
+		name = (TextView) view.findViewById(R.id.personinfo_name);
+		sex = (TextView) view.findViewById(R.id.personinfo_sex);
+		certype = (TextView) view.findViewById(R.id.personinfo_zhengjian);
+		cardno = (TextView) view.findViewById(R.id.personinfo_zhengjiannum);
+		phone = (TextView) view.findViewById(R.id.personinfo_phonenum);
+		email = (TextView) view.findViewById(R.id.personinfo_email);
+		unitname = (TextView) view.findViewById(R.id.personinfo_danwei);
 		refreshListData();
 	}
 

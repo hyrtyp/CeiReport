@@ -8,7 +8,7 @@
         <item name="android:titleTextStyle">@style/Widget.Cei.ActionBar.Title.v</item>
     </style>
 
-    <style name="Theme.Cei.Sherlock" parent="Theme.Cei.v">
+    <style name="Theme.Cei.Sherlock" parent="@style/Theme.Cei.v">
         <item name="android:actionBarStyle">@style/Widget.Cei.ActionBar</item>
     </style>
 

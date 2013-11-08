@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- v11 以下 -->
+    <style name="Widget.Cei.ActionBar.Title" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+    <!-- v11 以下 -->
+    <style name="Widget.Cei.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/phone_study_topbg</item>
+        <item name="titleTextStyle">@style/Widget.Cei.ActionBar.Title</item>
+    </style>
+    <!-- v11 以下 -->
+    <style name="Theme.Cei.Sherlock" parent="Theme.Cei">
+        <item name="actionBarStyle">@style/Widget.Cei.ActionBar</item>
+    </style>
+    
+    <!-- v11 以下 -->
+    <style name="Theme.Cei" parent="Theme.Sherlock">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- v11  v14 -->
+    <style name="Theme.Cei.v" parent="Sherlock.__Theme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- v11  v14 -->
+
+    <style name="Widget.Cei.ActionBar.Title.v" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

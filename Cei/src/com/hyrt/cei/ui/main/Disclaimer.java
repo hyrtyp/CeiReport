@@ -23,6 +23,7 @@ import com.hyrt.cei.R;
 import com.hyrt.cei.application.CeiApplication;
 import com.hyrt.cei.dzb.ui.HomePageDZB;
 import com.hyrt.cei.ui.common.WebViewUtil;
+import com.hyrt.cei.ui.ebook.BaseActivity;
 import com.hyrt.cei.ui.personcenter.PersonCenter;
 import com.hyrt.cei.ui.witsea.WitSeaActivity;
 import com.hyrt.cei.util.MyTools;
@@ -37,7 +38,7 @@ import com.hyrt.cei.webservice.service.Service;
  * @author Administrator
  * 
  */
-public class Disclaimer extends Activity implements OnClickListener {
+public class Disclaimer extends BaseActivity implements OnClickListener {
 	private Intent i;
 	private ColumnEntry columnEntry;
 	private String rs;
@@ -71,11 +72,11 @@ public class Disclaimer extends Activity implements OnClickListener {
 	}
 
 	private void init() {
-		findViewById(R.id.home_announcement).setOnClickListener(this);
-		findViewById(R.id.home_witsea).setOnClickListener(this);
-		findViewById(R.id.home_ceinet).setOnClickListener(this);
-		findViewById(R.id.home_personcenter).setOnClickListener(this);
-		findViewById(R.id.home).setOnClickListener(this);
+//		findViewById(R.id.home_announcement).setOnClickListener(this);
+//		findViewById(R.id.home_witsea).setOnClickListener(this);
+//		findViewById(R.id.home_ceinet).setOnClickListener(this);
+//		findViewById(R.id.home_personcenter).setOnClickListener(this);
+//		findViewById(R.id.home).setOnClickListener(this);
 		findViewById(R.id.abouts_us).setOnClickListener(this);
 		findViewById(R.id.usesinfo).setOnClickListener(this);
 		findViewById(R.id.mazminfo).setOnClickListener(this);

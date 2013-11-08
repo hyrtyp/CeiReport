@@ -7,6 +7,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.hyrt.cei.R;
@@ -18,7 +22,7 @@ import com.hyrt.cei.vo.ColumnEntry;
 import com.hyrt.cei.vo.PersonCenterInf;
 import com.hyrt.cei.webservice.service.Service;
 
-public class QccountInfo extends Activity {
+public class QccountInfo extends Fragment {
 	private ExecutorService executorService = Executors.newFixedThreadPool(1);
 	public static PersonCenterInf p;
 	private TextView userid, integral;
@@ -29,19 +33,22 @@ public class QccountInfo extends Activity {
 		return p;
 	}
 
-	protected void onCreate(Bundle savedInstanceState) {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.qccountinfo);
-		overridePendingTransition(R.anim.push_in, R.anim.push_out);
-		columnEntry = ((CeiApplication) getApplication()).columnEntry;
+//		setContentView(R.layout.qccountinfo);
+//		overridePendingTransition(R.anim.push_in, R.anim.push_out);
+		View view = inflater.inflate(R.layout.qccountinfo,container, false);
+		columnEntry = ((CeiApplication) getActivity().getApplication()).columnEntry;
 		userId = columnEntry.getUserId();
-		init();
+		init(view);
+		return view;
 	}
 
-	private void init() {
-		userid = (TextView) findViewById(R.id.personinfo_userid);
-		integral = (TextView) findViewById(R.id.personinfo_integral);
+	private void init(View view) {
+		userid = (TextView) view.findViewById(R.id.personinfo_userid);
+		integral = (TextView) view.findViewById(R.id.personinfo_integral);
 		refreshListData();
 	}
 

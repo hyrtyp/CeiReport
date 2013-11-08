@@ -321,11 +321,11 @@ public class RegistActivity extends Activity implements OnClickListener{
 	}
 	
 	private void registBottomEvent(){
-		findViewById(R.id.home_announcement).setOnClickListener(this);
-		findViewById(R.id.home_witsea).setOnClickListener(this);
-		findViewById(R.id.home_ceinet).setOnClickListener(this);
-		findViewById(R.id.home_personcenter).setOnClickListener(this);
-		findViewById(R.id.home_disclaimer).setOnClickListener(this);
+//		findViewById(R.id.home_announcement).setOnClickListener(this);
+//		findViewById(R.id.home_witsea).setOnClickListener(this);
+//		findViewById(R.id.home_ceinet).setOnClickListener(this);
+//		findViewById(R.id.home_personcenter).setOnClickListener(this);
+//		findViewById(R.id.home_disclaimer).setOnClickListener(this);
 		findViewById(R.id.back_back).setOnClickListener(this);
 	}
 	@Override
