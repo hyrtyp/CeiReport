@@ -7,7 +7,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class BaseActivity extends Activity {
-	// 维护activity集合
+	
+	// 维护activity集合   测试001
 	public static final List<Activity> activities = new ArrayList<Activity>();
 
 	@Override
